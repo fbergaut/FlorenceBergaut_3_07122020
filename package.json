@@ -1,0 +1,17 @@
+{
+  "name": "oc-p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css --style expanded",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbergaut/FlorenceBergaut_3_07122020.git"
+  },
+  "author": "fbergaut",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
