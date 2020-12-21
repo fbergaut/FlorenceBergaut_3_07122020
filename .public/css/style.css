@@ -33,9 +33,19 @@ li a {
   font-weight: normal;
   font-style: normal;
 }
+.headerMain {
+  background-color: #f6f6f6;
+}
+
+.headerMain a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .headerLogo {
   width: 50%;
-  background-color: #f6f6f6;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

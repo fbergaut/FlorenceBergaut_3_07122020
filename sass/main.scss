@@ -11,7 +11,17 @@
 //@import "./layout/header";
 //@import "./layout/container";
 
+.headerMain {
+  background-color: $clr-bgMain;
+}
+
+.headerMain a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .headerLogo {
   width: 50%;
-  background-color: $clr-bgMain;
+  padding: 2rem;
 }
