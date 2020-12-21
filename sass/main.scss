@@ -1,12 +1,17 @@
 @import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
+//@import "./utils/functions";
+//@import "./utils/mixins";
+//@import "./utils/extensions";
 
 @import "./base/base";
 @import "./base/typography";
 
-@import "./components/buttons";
+//@import "./components/buttons";
 
-@import "./layout/header";
-@import "./layout/container";
+//@import "./layout/header";
+//@import "./layout/container";
+
+.headerLogo {
+  width: 50%;
+  background-color: $clr-bgMain;
+}
