@@ -11,17 +11,18 @@
 //@import "./layout/header";
 //@import "./layout/container";
 
+//*************************headerMain
 .headerMain {
-  background-color: $clr-bgMain;
+  background-color: white;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    width: 50%;
+    padding: 2rem;
+  }
 }
 
-.headerMain a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.headerLogo {
-  width: 50%;
-  padding: 2rem;
-}
+//*************************headerMain
