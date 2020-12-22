@@ -105,8 +105,14 @@ h1 {
   border-radius: 999px;
   cursor: pointer;
   color: white;
-  background: #9356dc;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0px 5px 7px #c5c5c5;
+}
+.mainBtn:hover {
+  background: linear-gradient(0deg, #ae80e5 0%, #fface8 100%);
+}
+.mainBtn:hover {
+  box-shadow: 0px 5px 7px #acacac;
 }
 
 /*# sourceMappingURL=style.css.map */
