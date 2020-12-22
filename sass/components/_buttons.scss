@@ -1,0 +1,12 @@
+.mainBtn {
+  margin: 2.5rem 0;
+  padding: 1rem 1.2rem;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 999px;
+  cursor: pointer;
+  color: white;
+  @include btnMain-bg;
+  @include btnMain-shadow;
+}

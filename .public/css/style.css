@@ -53,6 +53,25 @@ h1 {
   font-size: 1rem;
 }
 
+.mainBtn {
+  margin: 2.5rem 0;
+  padding: 1rem 1.2rem;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 999px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0px 5px 7px #c5c5c5;
+}
+.mainBtn:hover {
+  background: linear-gradient(0deg, #ae80e5 0%, #fface8 100%);
+}
+.mainBtn:hover {
+  box-shadow: 0px 5px 7px #acacac;
+}
+
 .headerMain {
   box-shadow: 0px 3px 5px 0px rgba(121, 121, 121, 0.4);
   position: relative;
@@ -94,25 +113,6 @@ h1 {
   font-size: 1.1rem;
   line-height: 1.2;
   padding: 1rem 0 0 0;
-}
-
-.mainBtn {
-  margin: 2.5rem 0;
-  padding: 1rem 1.2rem;
-  border: none;
-  outline: none;
-  background: none;
-  border-radius: 999px;
-  cursor: pointer;
-  color: white;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  box-shadow: 0px 5px 7px #c5c5c5;
-}
-.mainBtn:hover {
-  background: linear-gradient(0deg, #ae80e5 0%, #fface8 100%);
-}
-.mainBtn:hover {
-  box-shadow: 0px 5px 7px #acacac;
 }
 
 /*# sourceMappingURL=style.css.map */

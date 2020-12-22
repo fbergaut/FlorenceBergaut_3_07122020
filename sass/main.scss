@@ -6,7 +6,7 @@
 @import "./base/base";
 @import "./base/typography";
 
-//@import "./components/buttons";
+@import "./components/buttons";
 
 //@import "./layout/header";
 //@import "./layout/container";
@@ -56,17 +56,4 @@
     line-height: 1.2;
     padding: 1rem 0 0 0;
   }
-}
-
-.mainBtn {
-  margin: 2.5rem 0;
-  padding: 1rem 1.2rem;
-  border: none;
-  outline: none;
-  background: none;
-  border-radius: 999px;
-  cursor: pointer;
-  color: white;
-  @include btnMain-bg;
-  @include btnMain-shadow;
 }
