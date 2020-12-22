@@ -13,8 +13,7 @@
 
 //*************************headerMain
 .headerMain {
-  background-color: white;
-  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0px 3px 5px 0px rgba(121, 121, 121, 0.4);
   position: relative;
   a {
     display: flex;
@@ -30,11 +29,10 @@
 //*************************section1 location
 
 .section1__location {
-  background-color: $clr-bgMain;
+  background-color: $clr-location;
   display: flex;
   justify-content: center;
   align-items: center;
-  //box-shadow: inset 0px 3px 5px 0px rgba(50, 50, 50, 0.4);
   .fas {
     padding: 1.1rem 1rem;
   }
@@ -42,5 +40,20 @@
     font-family: "Roboto";
     font-weight: 500;
     font-size: 1rem;
+  }
+}
+
+//*************************section1 title
+.section1__title {
+  background-color: $clr-bgMain;
+  text-align: center;
+  h1 {
+    padding: 2rem 0 0 0;
+  }
+  h2 {
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 1rem 0 0 0;
   }
 }
