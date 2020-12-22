@@ -34,7 +34,7 @@
   justify-content: center;
   align-items: center;
   .fas {
-    padding: 1.1rem 1rem;
+    padding: 1.1rem 1rem 1.1rem 0;
   }
   h2 {
     font-family: "Roboto";
@@ -48,12 +48,25 @@
   background-color: $clr-bgMain;
   text-align: center;
   h1 {
-    padding: 2rem 0 0 0;
+    padding: 2.5rem 0 0 0;
   }
   h2 {
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.2;
     padding: 1rem 0 0 0;
   }
+}
+
+.mainBtn {
+  margin: 2.5rem 0;
+  padding: 1rem 1.2rem;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 999px;
+  cursor: pointer;
+  color: white;
+  background: $clr-primary;
+  background: linear-gradient(0deg, $clr-primary 0%, $clr-secondary 100%);
 }
