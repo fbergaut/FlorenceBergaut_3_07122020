@@ -1,0 +1,19 @@
+//*************************Main button
+
+@mixin btnMain-bg {
+  background: $grd-btnMain;
+  &:hover {
+    background: linear-gradient(
+      0deg,
+      lighten($clr-primary, 10%) 0%,
+      lighten($clr-secondary, 10%) 100%
+    );
+  }
+}
+
+@mixin btnMain-shadow($colour: $clr-btnMain-shadow) {
+  box-shadow: 0px 5px 7px $colour;
+  &:hover {
+    box-shadow: 0px 5px 7px darken($colour, 10%);
+  }
+}
