@@ -163,3 +163,27 @@
 }
 
 //*************************footer
+
+footer {
+  padding: $padding-gutter;
+  background: $clr-bgFooter;
+  padding-bottom: 2.5rem;
+  img {
+    width: 30%;
+    padding: 1.8rem 0 1rem 0;
+  }
+  ul {
+    li {
+      a {
+        color: white;
+        font-weight: 300;
+        .fa-utensils {
+          padding-right: 0.8rem;
+        }
+        .fa-hands-helping {
+          padding-right: 0.41rem;
+        }
+      }
+    }
+  }
+}

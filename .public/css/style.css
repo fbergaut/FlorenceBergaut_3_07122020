@@ -221,4 +221,24 @@ h3 {
   padding-left: 1rem;
 }
 
+footer {
+  padding: 0 1.5rem;
+  background: #353535;
+  padding-bottom: 2.5rem;
+}
+footer img {
+  width: 30%;
+  padding: 1.8rem 0 1rem 0;
+}
+footer ul li a {
+  color: white;
+  font-weight: 300;
+}
+footer ul li a .fa-utensils {
+  padding-right: 0.8rem;
+}
+footer ul li a .fa-hands-helping {
+  padding-right: 0.41rem;
+}
+
 /*# sourceMappingURL=style.css.map */
