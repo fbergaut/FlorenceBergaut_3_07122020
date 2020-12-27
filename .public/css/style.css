@@ -195,12 +195,17 @@ h3 {
 .restaurantCard__img {
   position: relative;
 }
-.restaurantCard__img .newlabel {
+.restaurantCard__img .newLabel {
   position: absolute;
-  top: 1rem;
-  left: 3rem;
+  top: 0.8rem;
+  left: 14.5rem;
   background: #99e2d0;
-  padding: 1rem;
+  padding: 0.2rem 0.8rem;
+  color: #278870;
+  font-weight: 700;
+  border-radius: 0.2rem;
+  letter-spacing: 0.03rem;
+  font-size: 0.8rem;
 }
 .restaurantCard__img picture img {
   width: 100%;
