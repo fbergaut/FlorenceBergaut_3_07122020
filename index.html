@@ -33,7 +33,7 @@
     <!--Header-->
     <header class="headerMain">
       <a href="index.html"><img class="headerMain__logo" srcset="
-              public/img/home/logo-ohmyfood-mobile-ultra.png   1440w,
+              public/img/home/logo-ohmyfood-ultra.png   1440w,
               public/img/home/logo-ohmyfood-desktop.png  992w,
               public/img/home/logo-ohmyfood-mobile.png   688w"
               sizes="100vw" src="public/img/home/logo-ohmyfood-mobile.png" alt="Logo Ohmyfood"/></a>
@@ -81,12 +81,12 @@
 
       <!--Section 3 Restaurants-->
       <section class="section3">
-        <h1>restaurants</h1>
+        <h1>Restaurants</h1>
 
         <div class="restaurantCard">
-          <a href="#" class="restaurantCard__resultLink">
-            <div class="resultsCard__img">
-              <p>Nouveau</p>
+          <a href="#">
+            <div class="restaurantCard__img">
+                <p class="newLabel">Nouveau</p>
               <picture>
                 <source media="(max-width: 375px)" srcset="public/img/home/la-palette-du-gout-mobile.jpg 375w" sizes="100vw"/>
                 <img srcset="
@@ -95,16 +95,20 @@
                   sizes="100vw" src="public\img\home\la-palette-du-gout-mobile.jpg" alt="La palette du goût"/>
               </picture>
             </div>
-            <h4>La palette du goût</h4>
-            <p>Ménilmontant</p>
-            <i class="fas fa-heart"></i>
+            <div class="restaurantCard__info">
+              <div class="restaurantCard__nameLocation">
+                <h4>La palette du goût</h4>
+                <p>Ménilmontant</p>
+              </div>
+              <i class="far fa-heart"></i>
+            </div>
           </a>
         </div>
 
         <div class="restaurantCard">
           <a href="#" class="restaurantCard__resultLink">
-            <div class="resultsCard__img">
-              <p>Nouveau</p>
+            <div class="restaurantCard__img">
+              <p class="newLabel">Nouveau</p>
               <picture>
                 <source media="(max-width: 375px)" srcset="public/img/home/la-note-enchantee-mobile.jpg 375w" sizes="100vw"/>
                 <img srcset="
@@ -113,16 +117,19 @@
                   sizes="100vw" src="public/img/home/la-note-enchantee-desktop.jpg" alt="La note enchantée"/>
               </picture>
             </div>
-            <h4>La note enchantée</h4>
-            <p>Charonne</p>
-            <i class="fas fa-heart"></i>
+            <div class="restaurantCard__info">
+              <div class="restaurantCard__nameLocation">
+                <h4>La note enchantée</h4>
+                <p>Charonne</p>
+              </div>  
+              <i class="far fa-heart"></i>
+            </div>
           </a>
         </div>
 
         <div class="restaurantCard">
           <a href="#" class="restaurantCard__resultLink">
-            <div class="resultsCard__img">
-              <p>Nouveau</p>
+            <div class="restaurantCard__img">
               <picture>
                 <source media="(max-width: 375px)" srcset="public/img/home/a-la-francaise-mobile.jpg 375w" sizes="100vw"/>
                 <img srcset="
@@ -131,16 +138,19 @@
                   sizes="100vw" src="public/img/home/a-la-francaise-desktop.jpg" alt="À la française"/>
               </picture>
             </div>
-            <h4>À la française</h4>
-            <p>Cité rouge</p>
-            <i class="fas fa-heart"></i>
+            <div class="restaurantCard__info">
+              <div class="restaurantCard__nameLocation">
+                <h4>À la française</h4>
+                <p>Cité rouge</p>
+              </div>  
+              <i class="far fa-heart regular"></i>
+            </div>  
           </a>
         </div>
 
         <div class="restaurantCard">
           <a href="#" class="restaurantCard__resultLink">
-            <div class="resultsCard__img">
-              <p>Nouveau</p>
+            <div class="restaurantCard__img">
               <picture>
                 <source media="(max-width: 375px)" srcset="public/img/home/le-delice-des-sens-mobile.jpg 375w" sizes="100vw"/>
                 <img srcset="
@@ -149,9 +159,13 @@
                   sizes="100vw" src="public/img/home/le-delice-des-sens-desktop.jpg" alt="Le délice des sens"/>
               </picture>
             </div>
-            <h4>Le délice des sens</h4>
-            <p>Folie-Méricourt</p>
-            <i class="fas fa-heart"></i>
+            <div class="restaurantCard__info">
+              <div class="restaurantCard__nameLocation">
+                <h4>Le délice des sens</h4>
+                <p>Folie-Méricourt</p>
+              </div>  
+              <i class="far fa-heart"></i>
+            </div>    
           </a>
         </div>
       </section>
@@ -160,11 +174,11 @@
     <!--Footer-->
     <footer>
       <div>
-        <a href="index.html"><img srcset="
-              public/img/home/logo-ohmyfood-mobile-ultra.png   1440w,
-              public/img/home/logo-ohmyfood-desktop.png  992w,
-              public/img/home/logo-ohmyfood-mobile.png   688w"
-              sizes="100vw" src="public/img/home/logo-ohmyfood-mobile.png" alt="Logo Ohmyfood"/></a>
+        <a href="index.html"><img class="footer__logo" srcset="
+              public/img/home/logo-ohmyfood-footer-ultra.png   1440w,
+              public/img/home/logo-ohmyfood-footer-desktop.png  992w,
+              public/img/home/logo-ohmyfood-footer-mobile.png   688w"
+              sizes="100vw" src="public/img/home/logo-ohmyfood-footer-mobile.png" alt="Logo Ohmyfood"/></a>
       </div>
       <div>
         <ul>

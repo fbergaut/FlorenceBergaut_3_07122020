@@ -20,5 +20,15 @@
 
 //*************************Section2 label
 
-@mixin section2-label {
+@mixin newLabel {
+  position: absolute;
+  top: 0.8rem;
+  left: 14.5rem;
+  background: $clr-tertiary;
+  padding: $padding-newLabel;
+  color: darken($clr-tertiary, 40%);
+  font-weight: 700;
+  border-radius: 0.2rem;
+  letter-spacing: 0.03rem;
+  font-size: 0.8rem;
 }
