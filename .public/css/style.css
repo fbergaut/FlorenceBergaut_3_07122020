@@ -227,19 +227,6 @@ h3 {
   justify-content: space-between;
   padding: 0.3rem 0 0.8rem 0;
 }
-.restaurantCard__info .heart {
-  background: #9356dc;
-  mask-image: url(public\img\home\noun_Heart_1745668.svg);
-  transition: all 0.3s linear 0s;
-  width: 100%;
-  height: 0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-.restaurantCard__info .heart:hover {
-  background: grd-btnHeart;
-}
 .restaurantCard__nameLocation {
   padding-left: 1rem;
 }
