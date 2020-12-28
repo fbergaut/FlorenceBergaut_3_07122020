@@ -49,3 +49,9 @@
     box-shadow: 0px 5px 7px darken($colour, 10%);
   }
 }
+
+//*************************DishesGroup
+
+@mixin dishesGroup-shadow($colour: $clr-btnMain-shadow) {
+  box-shadow: 0px 5px 7px lighten($colour, 15%);
+}

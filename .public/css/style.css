@@ -280,7 +280,7 @@ footer ul li a .fa-hands-helping {
   padding-left: 1rem;
 }
 
-section {
+.restoContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -290,14 +290,17 @@ section {
   border-top-left-radius: 4rem;
   border-top-right-radius: 4rem;
 }
-section h1 {
+.restoContainer h1 {
   font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   padding-top: 2.188rem;
 }
-section .far {
+.restoContainer .far {
   font-size: 2rem;
   padding: 1.8rem 1.5rem;
+}
+.restoContainer .restoBtn {
+  margin-bottom: 5rem;
 }
 
 .dishesBloc {
@@ -324,9 +327,10 @@ section .far {
 .dishesGroup {
   background: white;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 1rem;
   margin-top: 1rem;
   border-radius: 1.25rem;
+  box-shadow: 0px 5px 7px #ebebeb;
 }
 .dishesGroup__item {
   display: flex;
@@ -341,8 +345,10 @@ section .far {
   font-size: 0.9rem;
 }
 .dishesGroup__item .price {
-  font-size: 1.2rem;
   font-weight: 700;
+}
+.dishesGroup__check {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
