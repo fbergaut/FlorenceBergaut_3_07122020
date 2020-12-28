@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link type="text/css" href=".public/css/style.css" rel="stylesheet" />
+    
     <title>Oh My Food - Restaurant La note enchantée</title>
     <meta name="description" content="Quand l'excellence et le raffinement se rencontre." />
 
@@ -35,17 +38,17 @@
       </div>
       <div>
         <a href="index.html"><img srcset="
-              public/img/home/logo-ohmyfood-mobile-ultra.png   1440w,
+              public/img/home/logo-ohmyfood-ultra.png   1440w,
               public/img/home/logo-ohmyfood-desktop.png  992w,
               public/img/home/logo-ohmyfood-mobile.png   688w"
               sizes="100vw" src="public/img/home/logo-ohmyfood-mobile.png" alt="Logo Ohmyfood"/></a>
       </div>
       <picture>
-        <source media="(max-width: 375px)" srcset="img/la-note-enchantee-mobile.jpg 375w" sizes="100vw"/>
+        <source media="(max-width: 375px)" srcset="public/img/restoPages/la-note-enchantee-mobile.jpg 375w" sizes="100vw"/>
         <img srcset="
-            img/la-note-enchantee-desktop.jpg  992w,
-            img/la-note-enchantee-ultra.jpg   1440w"
-            sizes="100vw" src="img/la-note-enchantee-desktop.jpg" alt="Restaurant La note enchantée"/>
+            public/img/restoPages/la-note-enchantee-desktop.jpg  992w,
+            public/img/restoPages/la-note-enchantee-ultra.jpg   1440w"
+            sizes="100vw" src="public/img/restoPages/la-note-enchantee-desktop.jpg" alt="Restaurant La note enchantée"/>
       </picture>
     </header>
 
@@ -61,8 +64,8 @@
         <div class="dishesGroup">
           <a href="#" class="dishesGroup__link">
             <div class="dishesGroup__item">
-              <h3>Tartare de thon</h3>
-              <p>Assaisonné au yuzu</p>
+              <h3>Ravioles de foie gras</h3>
+              <p>Accompagnés de leur crème à la truffe</p>
               <p>25€</p>
             </div>
             <div class="dishesGroup__ckeck">
@@ -74,8 +77,8 @@
         <div class="dishesGroup">
           <a href="#" class="dishesGroup__link">
             <div class="dishesGroup__item">
-              <h3>Bouchée de homard croustillant</h3>
-              <p>Et sa farandole de petits légumes</p>
+              <h3>Caviar osciètre</h3>
+              <p>Sur blini à la farine de blé noir</p>
               <p>35€</p>
             </div>
             <div class="dishesGroup__ckeck">
@@ -87,9 +90,22 @@
         <div class="dishesGroup">
           <a href="#" class="dishesGroup__link">
             <div class="dishesGroup__item">
-              <h3>Velouté de cèpes</h3>
-              <p>Et sa farandole de petits légumes</p>
+              <h3>Homard et espuma de potiron</h3>
+              <p>Mariné aux zestes d'orange</p>
               <p>20€</p>
+            </div>
+            <div class="dishesGroup__ckeck">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="dishesGroup">
+          <a href="#" class="dishesGroup__link">
+            <div class="dishesGroup__item">
+              <h3>Foie gras de canard cuit entier</h3>
+              <p>Confiture de figue et pain toasté</p>
+              <p>35€</p>
             </div>
             <div class="dishesGroup__ckeck">
               <i class="fas fa-check-circle"></i>
@@ -105,8 +121,8 @@
         <div class="dishesGroup">
           <a href="#" class="dishesGroup__link">
             <div class="dishesGroup__item">
-              <h3>Poulet rôti aux herbes de Provence</h3>
-              <p>Et sa crème de truffe</p>
+              <h3>Noix de coquilles Saint-Jacques</h3>
+              <p>Sur lit de purée de céleri-rave</p>
               <p>40€</p>
             </div>
             <div class="dishesGroup__ckeck">
@@ -118,8 +134,8 @@
         <div class="dishesGroup">
           <a href="#" class="dishesGroup__link">
             <div class="dishesGroup__item">
-              <h3>Langouste rôtie</h3>
-              <p>Et ses légumes de saison</p>
+              <h3>Langoustine poêlée</h3>
+              <p>Purée de patate douce</p>
               <p>35€</p>
             </div>
             <div class="dishesGroup__ckeck">
@@ -131,8 +147,8 @@
         <div class="dishesGroup">
           <a href="#" class="dishesGroup__link">
             <div class="dishesGroup__item">
-              <h3>Côte de boeuf Angus</h3>
-              <p>Et sa purée de panais</p>
+              <h3>Mijoté de queue de boeuf</h3>
+              <p>Et riz sauvage aux zestes de citron</p>
               <p>44€</p>
             </div>
             <div class="dishesGroup__ckeck">
@@ -149,8 +165,8 @@
         <div class="dishesGroup">
           <a href="#" class="dishesGroup__link">
             <div class="dishesGroup__item">
-              <h3>Farandole de desserts</h3>
-              <p>Du chef</p>
+              <h3>Macaron noisette et chocolat</h3>
+              <p>Glace au caramel brun et sel de Guérande</p>
               <p>18€</p>
             </div>
             <div class="dishesGroup__ckeck">
@@ -162,8 +178,8 @@
         <div class="dishesGroup">
           <a href="#" class="dishesGroup__link">
             <div class="dishesGroup__item">
-              <h3>Crème brulée</h3>
-              <p>Revisitée</p>
+              <h3>Baba au rhum revisité</h3>
+              <p>Avec son coulis de citron</p>
               <p>22€</p>
             </div>
             <div class="dishesGroup__ckeck">
@@ -175,8 +191,8 @@
         <div class="dishesGroup">
           <a href="#" class="dishesGroup__link">
             <div class="dishesGroup__item">
-              <h3>Tiramisu</h3>
-              <p>À la noisette</p>
+              <h3>Tarte au citron meringuée</h3>
+              <p>Déstructurée</p>
               <p>23€</p>
             </div>
             <div class="dishesGroup__ckeck">
@@ -193,7 +209,7 @@
     <footer>
       <div>
         <a href="index.html"><img srcset="
-              public/img/home/logo-ohmyfood-mobile-ultra.png   1440w,
+              public/img/home/logo-ohmyfood-ultra.png   1440w,
               public/img/home/logo-ohmyfood-desktop.png  992w,
               public/img/home/logo-ohmyfood-mobile.png   688w"
               sizes="100vw" src="public/img/home/logo-ohmyfood-mobile.png" alt="Logo Ohmyfood"/></a>

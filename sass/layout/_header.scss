@@ -1,0 +1,36 @@
+//*************************headerMain
+.headerMain {
+  box-shadow: 0px 3px 5px 0px rgba(121, 121, 121, 0.4);
+  position: relative;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    width: 55%;
+    padding: 1rem;
+  }
+}
+
+//*************************headerResto
+.headerResto {
+  position: relative;
+  &__returnBtn {
+    position: absolute;
+    font-size: 1.3rem;
+    padding: 1.4rem;
+    &:hover {
+      color: $clr-primary;
+    }
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    width: 55%;
+    padding: 1rem;
+  }
+}

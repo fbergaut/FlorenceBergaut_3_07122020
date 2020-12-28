@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link type="text/css" href=".public/css/style.css" rel="stylesheet" />
     <title>Oh My Food - Restaurant À la française</title>
     <meta name="description" content="Des plats typiques du terroire." />
 
@@ -29,23 +31,23 @@
 
   <body>
     <!--Header-->
-    <header>
-      <div class="returnBtn">
+    <header class="headerResto">
+      <div class="headerResto__returnBtn">
         <a href="index.html"><i class="fas fa-arrow-left"></i></a>
       </div>
       <div>
-        <a href="index.html"><img srcset="
-              public/img/home/logo-ohmyfood-mobile-ultra.png   1440w,
+        <a href="index.html"><img class="headerResto__logo" srcset="
+              public/img/home/logo-ohmyfood-ultra.png   1440w,
               public/img/home/logo-ohmyfood-desktop.png  992w,
               public/img/home/logo-ohmyfood-mobile.png   688w"
               sizes="100vw" src="public/img/home/logo-ohmyfood-mobile.png" alt="Logo Ohmyfood"/></a>
       </div>
       <picture>
-        <source media="(max-width: 375px)" srcset="img/a-la-francaise-mobile.jpg 375w" sizes="100vw"/>
+        <source media="(max-width: 375px)" srcset="public/img/restoPages/a-la-francaise-mobile.jpg 375w" sizes="100vw"/>
         <img srcset="
-            img/a-la-francaise-desktop.jpg  992w,
-            img/a-la-francaise-ultra.jpg   1440w "
-            sizes="100vw" src="img/a-la-francaise-desktop.jpg" alt="Restaurant À la française"/>
+            public/img/restoPages/a-la-francaise-desktop.jpg  992w,
+            public/img/restoPages/a-la-francaise-ultra.jpg   1440w "
+            sizes="100vw" src="public/img/restoPages/a-la-francaise-desktop.jpg" alt="Restaurant À la française"/>
       </picture>
     </header>
 
@@ -193,7 +195,7 @@
     <footer>
       <div>
         <a href="index.html"><img srcset="
-              public/img/home/logo-ohmyfood-mobile-ultra.png   1440w,
+              public/img/home/logo-ohmyfood-ultra.png   1440w,
               public/img/home/logo-ohmyfood-desktop.png  992w,
               public/img/home/logo-ohmyfood-mobile.png   688w"
               sizes="100vw" src="public/img/home/logo-ohmyfood-mobile.png" alt="Logo Ohmyfood"/></a>

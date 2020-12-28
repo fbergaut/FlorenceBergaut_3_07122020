@@ -94,6 +94,47 @@ h3 {
   padding: 1rem;
 }
 
+.headerResto {
+  position: relative;
+}
+.headerResto__returnBtn {
+  position: absolute;
+  font-size: 1.3rem;
+  padding: 1.4rem;
+}
+.headerResto__returnBtn:hover {
+  color: #9356dc;
+}
+.headerResto a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerResto__logo {
+  width: 55%;
+  padding: 1rem;
+}
+
+footer {
+  padding: 0 1.5rem;
+  background: #353535;
+  padding-bottom: 2.5rem;
+}
+footer img {
+  width: 30%;
+  padding: 1.8rem 0 1rem 0;
+}
+footer ul li a {
+  color: white;
+  font-weight: 300;
+}
+footer ul li a .fa-utensils {
+  padding-right: 0.8rem;
+}
+footer ul li a .fa-hands-helping {
+  padding-right: 0.41rem;
+}
+
 .section1__location {
   background-color: #eaeaea;
   display: flex;
@@ -227,32 +268,8 @@ h3 {
   justify-content: space-between;
   padding: 0.3rem 0 0.8rem 0;
 }
-.restaurantCard__info .far {
-  font-size: 1.4rem;
-  padding: 0.5rem 2rem 0 0;
-}
 .restaurantCard__nameLocation {
   padding-left: 1rem;
-}
-
-footer {
-  padding: 0 1.5rem;
-  background: #353535;
-  padding-bottom: 2.5rem;
-}
-footer img {
-  width: 30%;
-  padding: 1.8rem 0 1rem 0;
-}
-footer ul li a {
-  color: white;
-  font-weight: 300;
-}
-footer ul li a .fa-utensils {
-  padding-right: 0.8rem;
-}
-footer ul li a .fa-hands-helping {
-  padding-right: 0.41rem;
 }
 
 /*# sourceMappingURL=style.css.map */
