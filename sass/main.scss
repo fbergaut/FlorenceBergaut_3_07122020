@@ -156,9 +156,9 @@
 
 section {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  flex: 1;
+  justify-content: center;
+  align-items: center;
   background: $clr-bgMain;
   padding: $padding-gutter;
   border-top-left-radius: 4rem;
@@ -166,7 +166,7 @@ section {
   h1 {
     font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    padding: 2.188rem 0;
+    padding-top: 2.188rem;
   }
   .far {
     font-size: 2rem;
@@ -176,19 +176,47 @@ section {
 .dishesBloc {
   display: flex;
   flex-direction: column;
+  width: 100%;
   &__title {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 100;
-    padding-bottom: 1rem;
+    padding: 2.84rem 0 0.7rem 0;
     position: relative;
     &::after {
       content: "";
       width: 2.5rem;
       position: absolute;
       border-bottom: 0.3rem solid $clr-tertiary;
-      top: 2rem;
+      top: 4.7rem;
       left: 0;
     }
+  }
+}
+
+.dishesGroup {
+  background: white;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  border-radius: 1.25rem;
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    //align-items: flex-end;
+    h3 {
+      font-size: 1.2rem;
+      flex: 1 100%;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+  }
+  &__ckeck {
   }
 }
