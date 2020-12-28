@@ -3,22 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Oh My Food - Restaurant La note enchantée</title>
-    <meta name="description" content="Quand l'excellence et le raffinement se rencontre." />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link type="text/css" href=".public/css/style.css" rel="stylesheet" />
+    <title>Oh My Food - Restaurant La palette du goût</title>
+    <meta name="description" content="La convivialité d'une cuisine de bistro." />
 
     <!-- Open Graph data -->
     <meta property="og:title" content="Oh My Food - Restaurant La note enchantée" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.ohmyfood.com/la-note-enchantee.html" />
+    <meta property="og:url" content="http://www.ohmyfood.com/la-palette-du-gout.html" />
     <meta property="og:image" content="http://www.ohmyfood.com/img/image.jpg" />
-    <meta property="og:description" content="Quand l'excellence et le raffinement se rencontre." />
+    <meta property="og:description" content="La convivialité d'une cuisine de bistro." />
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@publisher_handle" />
     <meta name="twitter:title" content="Oh My Food - Restaurant La note enchantée" />
-    <meta name="twitter:description" content="Quand l'excellence et le raffinement se rencontre." />
+    <meta name="twitter:description" content="La convivialité d'une cuisine de bistro." />
     <meta name="twitter:creator" content="@author_handle" />
     <!-- Twitter Summary card images must be at least 200x200px -->
     <meta name="twitter:image" content="http://www.ohmyfood.com/img/image.jpg"/>
@@ -29,23 +31,23 @@
 
   <body>
     <!--Header-->
-    <header>
-      <div class="returnBtn">
+    <header class="headerResto">
+      <div class="headerResto__returnBtn">
         <a href="index.html"><i class="fas fa-arrow-left"></i></a>
       </div>
       <div>
-        <a href="index.html"><img srcset="
+        <a href="index.html"><img class="headerResto__logo" srcset="
               public/img/home/logo-ohmyfood-mobile-ultra.png   1440w,
               public/img/home/logo-ohmyfood-desktop.png  992w,
               public/img/home/logo-ohmyfood-mobile.png   688w"
               sizes="100vw" src="public/img/home/logo-ohmyfood-mobile.png" alt="Logo Ohmyfood"/></a>
       </div>
       <picture>
-        <source media="(max-width: 375px)" srcset="img/la-note-enchantee-mobile.jpg 375w" sizes="100vw"/>
+        <source media="(max-width: 375px)" srcset="public/img/restoPages/la-palette-du-gout-mobile.jpg 375w" sizes="100vw"/>
         <img srcset="
-            img/la-note-enchantee-desktop.jpg  992w,
-            img/la-note-enchantee-ultra.jpg   1440w"
-            sizes="100vw" src="img/la-note-enchantee-desktop.jpg" alt="Restaurant La note enchantée"/>
+            public/img/restoPages/la-palette-du-gout-desktop.jpg  992w,
+            public/img/restoPages/la-palette-du-gout-ultra.jpg   1440w"
+            sizes="100vw" src="public/img/restoPages/la-palette-du-gout-desktop.jpg" alt="Restaurant La note enchantée"/>
       </picture>
     </header>
 
