@@ -12,6 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
+  position: relative;
 }
 
 a {
@@ -29,8 +30,8 @@ li a {
 
 @font-face {
   font-family: "shrikhandregular";
-  src: url("shrikhand-regular-webfont.eot");
-  src: url("shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("shrikhand-regular-webfont.woff2") format("woff2"), url("shrikhand-regular-webfont.woff") format("woff"), url("shrikhand-regular-webfont.ttf") format("truetype"), url("shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
+  src: url("public/font/shrikhand-regular-webfont.eot");
+  src: url("public/font/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("public/font/shrikhand-regular-webfont.woff2") format("woff2"), url("public/font/shrikhand-regular-webfont.woff") format("woff"), url("public/font/shrikhand-regular-webfont.ttf") format("truetype"), url("public/font/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -277,6 +278,46 @@ footer ul li a .fa-hands-helping {
 }
 .restaurantCard__nameLocation {
   padding-left: 1rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
+  background: #f6f6f6;
+  padding: 0 1.5rem;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+}
+section h1 {
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  padding: 2.188rem 0;
+}
+section .far {
+  font-size: 2rem;
+  padding: 1.8rem 1.5rem;
+}
+
+.dishesBloc {
+  display: flex;
+  flex-direction: column;
+}
+.dishesBloc__title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 100;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.dishesBloc__title::after {
+  content: "";
+  width: 2.5rem;
+  position: absolute;
+  border-bottom: 0.3rem solid #99e2d0;
+  top: 2rem;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

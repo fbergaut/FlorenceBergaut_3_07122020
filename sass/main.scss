@@ -29,7 +29,7 @@
   }
 }
 
-//*************************section1 title
+//*************************index section1 title
 .section1__title {
   background-color: $clr-bgMain;
   text-align: center;
@@ -44,7 +44,7 @@
   }
 }
 
-//*************************section2
+//*************************index section2
 
 .section2 {
   display: flex;
@@ -99,7 +99,7 @@
   }
 }
 
-//*************************section3
+//*************************index section3
 
 .section3 {
   padding: $padding-gutter;
@@ -149,5 +149,46 @@
   }
   &__nameLocation {
     padding-left: 1rem;
+  }
+}
+
+//*************************resto section
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
+  background: $clr-bgMain;
+  padding: $padding-gutter;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  h1 {
+    font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 2.188rem 0;
+  }
+  .far {
+    font-size: 2rem;
+    padding: 1.8rem 1.5rem;
+  }
+}
+.dishesBloc {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-bottom: 1rem;
+    position: relative;
+    &::after {
+      content: "";
+      width: 2.5rem;
+      position: absolute;
+      border-bottom: 0.3rem solid $clr-tertiary;
+      top: 2rem;
+      left: 0;
+    }
   }
 }
