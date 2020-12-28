@@ -12,3 +12,25 @@
     padding: 1rem;
   }
 }
+
+//*************************headerResto
+.headerResto {
+  position: relative;
+  &__returnBtn {
+    position: absolute;
+    font-size: 1.3rem;
+    padding: 1.4rem;
+    &:hover {
+      color: $clr-primary;
+    }
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    width: 55%;
+    padding: 1rem;
+  }
+}

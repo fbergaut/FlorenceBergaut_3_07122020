@@ -94,6 +94,27 @@ h3 {
   padding: 1rem;
 }
 
+.headerResto {
+  position: relative;
+}
+.headerResto__returnBtn {
+  position: absolute;
+  font-size: 1.3rem;
+  padding: 1.4rem;
+}
+.headerResto__returnBtn:hover {
+  color: #9356dc;
+}
+.headerResto a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerResto__logo {
+  width: 55%;
+  padding: 1rem;
+}
+
 footer {
   padding: 0 1.5rem;
   background: #353535;
