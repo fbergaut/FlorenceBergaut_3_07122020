@@ -118,7 +118,7 @@
   border-radius: 1.25rem;
   margin-bottom: 2.5rem;
   @include restaurantCard-shadow;
-  @include restaurantCard-opacity;
+  // @include restaurantCard-opacity;
   &__img {
     position: relative;
     .newLabel {
@@ -156,8 +156,7 @@
   align-items: center;
   background: $clr-bgMain;
   padding: $padding-gutter;
-  border-top-left-radius: 2.5rem;
-  border-top-right-radius: 2.5rem;
+  border-radius: 2.5rem 2.5rem 0 0;
   &__title {
     display: flex;
     justify-content: space-between;
