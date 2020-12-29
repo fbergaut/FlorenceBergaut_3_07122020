@@ -165,14 +165,19 @@
   padding: $padding-gutter;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
-  h1 {
-    font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     padding-top: 2.188rem;
-  }
-  .far {
-    font-size: 2rem;
-    padding: 1.8rem 1.5rem;
+    h1 {
+      font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
+      font-size: 1.8rem;
+    }
+    .far {
+      font-size: 1.7rem;
+      padding-right: 1.5rem;
+    }
   }
   .restoBtn {
     margin-bottom: 5rem;
