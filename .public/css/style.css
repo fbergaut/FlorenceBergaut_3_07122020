@@ -142,6 +142,9 @@ footer ul li a .fa-utensils {
 footer ul li a .fa-hands-helping {
   padding-right: 0.41rem;
 }
+footer ul li a:hover {
+  color: #ff79da;
+}
 
 .section1__location {
   background-color: #eaeaea;
