@@ -12,6 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
+  position: relative;
 }
 
 a {
@@ -29,8 +30,8 @@ li a {
 
 @font-face {
   font-family: "shrikhandregular";
-  src: url("shrikhand-regular-webfont.eot");
-  src: url("shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("shrikhand-regular-webfont.woff2") format("woff2"), url("shrikhand-regular-webfont.woff") format("woff"), url("shrikhand-regular-webfont.ttf") format("truetype"), url("shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
+  src: url("font/shrikhand-regular-webfont.eot");
+  src: url("font/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("font/shrikhand-regular-webfont.woff2") format("woff2"), url("font/shrikhand-regular-webfont.woff") format("woff"), url("font/shrikhand-regular-webfont.ttf") format("truetype"), url("font/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -62,6 +63,7 @@ h3 {
 }
 
 .mainBtn {
+  width: 60%;
   margin: 2.5rem 0;
   padding: 1rem 1.2rem;
   border: none;
@@ -96,13 +98,14 @@ h3 {
 
 .headerResto {
   position: relative;
+  width: 100%;
 }
 .headerResto__returnBtn {
   position: absolute;
   font-size: 1.3rem;
   padding: 1.4rem;
 }
-.headerResto__returnBtn:hover {
+.headerResto__returnBtn a:hover {
   color: #9356dc;
 }
 .headerResto a {
@@ -113,6 +116,12 @@ h3 {
 .headerResto__logo {
   width: 55%;
   padding: 1rem;
+}
+.headerResto picture img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding-bottom: 79rem;
 }
 
 footer {
@@ -133,6 +142,9 @@ footer ul li a .fa-utensils {
 }
 footer ul li a .fa-hands-helping {
   padding-right: 0.41rem;
+}
+footer ul li a:hover {
+  color: #ff79da;
 }
 
 .section1__location {
@@ -212,6 +224,7 @@ footer ul li a .fa-hands-helping {
 }
 .section2__label:hover {
   background: #f2eafb;
+  cursor: pointer;
 }
 .section2__label:hover .fas {
   color: #9356dc;
@@ -270,6 +283,88 @@ footer ul li a .fa-hands-helping {
 }
 .restaurantCard__nameLocation {
   padding-left: 1rem;
+}
+.restaurantCard .far {
+  padding: 0.5rem 1.5rem 0 0;
+  font-size: 1.5rem;
+}
+
+.restoContainer {
+  position: absolute;
+  top: 18rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  padding: 0 1.5rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+}
+.restoContainer__title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2.188rem;
+}
+.restoContainer__title h1 {
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+.restoContainer__title .far {
+  font-size: 1.7rem;
+  padding-right: 1.5rem;
+}
+.restoContainer .restoBtn {
+  margin-bottom: 5rem;
+}
+
+.dishesBloc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.dishesBloc__title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 2.3rem 0 0.7rem 0;
+  position: relative;
+}
+.dishesBloc__title::after {
+  content: "";
+  width: 2.5rem;
+  position: absolute;
+  border-bottom: 0.3rem solid #99e2d0;
+  top: 4.2rem;
+  left: 0;
+}
+
+.dishesGroup {
+  background: white;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1.25rem;
+  box-shadow: 0px 5px 7px #ebebeb;
+}
+.dishesGroup__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dishesGroup__item h3 {
+  font-size: 1.2rem;
+  flex: 1 100%;
+}
+.dishesGroup__item p {
+  font-size: 0.9rem;
+}
+.dishesGroup__item .price {
+  font-weight: 700;
+}
+.dishesGroup__check {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

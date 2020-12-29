@@ -19,6 +19,9 @@ footer {
         .fa-hands-helping {
           padding-right: 0.41rem;
         }
+        &:hover {
+          color: $clr-secondary;
+        }
       }
     }
   }

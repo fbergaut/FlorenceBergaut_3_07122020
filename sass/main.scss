@@ -29,7 +29,7 @@
   }
 }
 
-//*************************section1 title
+//*************************index section1 title
 .section1__title {
   background-color: $clr-bgMain;
   text-align: center;
@@ -44,7 +44,7 @@
   }
 }
 
-//*************************section2
+//*************************index section2
 
 .section2 {
   display: flex;
@@ -92,6 +92,7 @@
     }
     &:hover {
       background: lighten($clr-primary, 35%);
+      cursor: pointer;
       .fas {
         color: $clr-primary;
       }
@@ -99,7 +100,7 @@
   }
 }
 
-//*************************section3
+//*************************index section3
 
 .section3 {
   padding: $padding-gutter;
@@ -134,20 +135,93 @@
     display: flex;
     justify-content: space-between;
     padding: 0.3rem 0 0.8rem 0;
-    // .heart {
-    //   background: $clr-primary;
-    //   mask-image: url(public\img\home\noun_Heart_1745668.svg);
-    //   transition: all 0.3s linear 0s;
-    //   width: 100%;
-    //   height: 0;
-    //   position: absolute;
-    //   left: 0;
-    //   bottom: 0;
-    //   &:hover {
-    //     background: grd-btnHeart;
-    //   }
   }
   &__nameLocation {
     padding-left: 1rem;
+  }
+  .far {
+    padding: 0.5rem 1.5rem 0 0;
+    font-size: 1.5rem;
+  }
+}
+
+//*************************resto section
+
+.restoContainer {
+  position: absolute;
+  top: 18rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: $clr-bgMain;
+  padding: $padding-gutter;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2.188rem;
+    h1 {
+      font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
+      font-size: 1.8rem;
+    }
+    .far {
+      font-size: 1.7rem;
+      padding-right: 1.5rem;
+    }
+  }
+  .restoBtn {
+    margin-bottom: 5rem;
+  }
+}
+.dishesBloc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 2.3rem 0 0.7rem 0;
+    position: relative;
+    &::after {
+      content: "";
+      width: 2.5rem;
+      position: absolute;
+      border-bottom: 0.3rem solid $clr-tertiary;
+      top: 4.2rem;
+      left: 0;
+    }
+  }
+}
+
+.dishesGroup {
+  background: white;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1.25rem;
+  @include dishesGroup-shadow;
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    //align-items: flex-end;
+    h3 {
+      font-size: 1.2rem;
+      flex: 1 100%;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    .price {
+      //font-size: 1.2rem;
+      font-weight: 700;
+    }
+  }
+  &__check {
+    display: none;
   }
 }

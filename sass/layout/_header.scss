@@ -16,11 +16,12 @@
 //*************************headerResto
 .headerResto {
   position: relative;
+  width: 100%;
   &__returnBtn {
     position: absolute;
     font-size: 1.3rem;
     padding: 1.4rem;
-    &:hover {
+    a:hover {
       color: $clr-primary;
     }
   }
@@ -32,5 +33,11 @@
   &__logo {
     width: 55%;
     padding: 1rem;
+  }
+  picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 79rem;
   }
 }
