@@ -117,14 +117,10 @@ h3 {
   width: 55%;
   padding: 1rem;
 }
-.headerResto__img {
+.headerResto picture img {
   width: 100%;
   height: auto;
-  background-image: url(public\img\restoPages\a-la-francaise-mobile.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  top: 0;
+  object-fit: cover;
 }
 
 footer {
@@ -288,14 +284,16 @@ footer ul li a:hover {
 }
 
 .restoContainer {
+  position: absolute;
+  top: 18rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background: #f6f6f6;
   padding: 0 1.5rem;
-  border-top-left-radius: 4rem;
-  border-top-right-radius: 4rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
 }
 .restoContainer h1 {
   font-family: "shrikhandregular", Arial, Helvetica, sans-serif;

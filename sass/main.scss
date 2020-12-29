@@ -155,14 +155,16 @@
 //*************************resto section
 
 .restoContainer {
+  position: absolute;
+  top: 18rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background: $clr-bgMain;
   padding: $padding-gutter;
-  border-top-left-radius: 4rem;
-  border-top-right-radius: 4rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
   h1 {
     font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
     font-size: 2rem;
