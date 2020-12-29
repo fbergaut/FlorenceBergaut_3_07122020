@@ -83,20 +83,23 @@ h3 {
 }
 
 .heartBtn {
+  display: block;
   position: relative;
-  width: 2rem;
-  height: 2rem;
+  top: 0.5rem;
+  left: -0.2rem;
+  opacity: 0;
 }
 .heartBtn::before, .heartBtn::after {
   position: absolute;
   content: "";
-  width: 2rem;
-  height: 3rem;
-  background: #9356dc;
+  width: 1rem;
+  height: 1.5rem;
   border-radius: 1rem 1rem 0 0;
+  transition: 0.35s ease-in-out;
+  transition-property: top, bottom, left, right;
 }
 .heartBtn::before {
-  left: 2rem;
+  left: 1rem;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-transform-origin: 0 100%;
@@ -114,6 +117,9 @@ h3 {
 }
 .heartBtn:hover::after {
   background: linear-gradient(-45deg, #ff79da 0%, #9356dc 100%);
+}
+.heartBtn:hover {
+  opacity: 1;
 }
 
 .headerMain {
@@ -314,8 +320,8 @@ footer ul li a:hover {
   padding-left: 1rem;
 }
 .restaurantCard .far {
-  padding: 0.5rem 1.5rem 0 0;
-  font-size: 1.5rem;
+  padding: 0.4rem 1.55rem 0 0;
+  font-size: 1.6rem;
 }
 
 .restoContainer {
