@@ -9,7 +9,16 @@ $clr-bgFooter: #353535;
 
 $clr-btnMain-shadow: #c5c5c5;
 $grd-btnMain: linear-gradient(0deg, $clr-primary 0%, $clr-secondary 100%);
-$grd-btnHeart: linear-gradient(0deg, $clr-secondary 0%, $clr-primary 100%);
+$grd-btnHeart-right: linear-gradient(
+  45deg,
+  $clr-secondary 0%,
+  $clr-primary 100%
+);
+$grd-btnHeart-left: linear-gradient(
+  -45deg,
+  $clr-secondary 0%,
+  $clr-primary 100%
+);
 
 //**************************list
 

@@ -11,3 +11,46 @@
   @include btnMain-bg;
   @include btnMain-shadow;
 }
+
+//****************************heartBtn
+
+.heartBtn {
+  display: block;
+  position: relative;
+  top: 0.5rem;
+  left: -0.2rem;
+  opacity: 0;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 1.5rem;
+    border-radius: 1rem 1rem 0 0;
+    transition: 0.35s ease-in-out;
+    transition-property: top, bottom, left, right;
+  }
+  &::before {
+    left: 1rem;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  &::after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  &:hover::before {
+    background: $grd-btnHeart-right;
+  }
+  &:hover::after {
+    background: $grd-btnHeart-left;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
