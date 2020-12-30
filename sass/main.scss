@@ -221,7 +221,7 @@
     .price {
       font-weight: 700;
       transform: translateX(0);
-      transition: transform 500ms 100ms;
+      transition: transform 500ms 70ms;
       background: white;
       position: absolute;
       padding: 1.5rem 2rem 0 0;
@@ -236,13 +236,15 @@
     top: 1.05rem;
     padding-right: 1.5rem;
     transform: translateX(17rem);
-    transition: transform 600ms;
+    transition: transform 550ms;
     &--regular {
       position: absolute;
       background: white;
       font-size: 0.9rem;
       top: 2.45rem;
-      padding-right: 1rem;
+      padding-right: 1.5rem;
+      transform: translateX(17rem);
+      transition: transform 550ms;
     }
   }
   &__check {
@@ -278,7 +280,10 @@
     transform: translateX(-4.45rem);
   }
   &:hover .dishesGroup__dots {
-    transform: translateX(11rem);
+    transform: translateX(10.7rem);
+  }
+  &:hover .dishesGroup__dots--regular {
+    transform: translateX(10.7rem);
   }
 }
 
