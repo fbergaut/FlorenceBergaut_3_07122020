@@ -228,6 +228,8 @@
     position: absolute;
     top: 0;
     left: 21rem;
+    transform: translateX(0);
+    transition: transform 1000ms;
     .fas {
       color: white;
       padding: 1.75rem 1.2rem;
@@ -244,7 +246,7 @@
     }
   }
   &:hover .dishesGroup__check {
-    animation: dishesGroup__check-animation 1000ms both;
+    transform: translateX(-4.45rem);
   }
   &:hover .fa-check-circle {
     transform: rotate(360deg);
@@ -261,28 +263,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-@keyframes dishesGroup__check-animation {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-4.45rem);
-  }
-  // 0% {
-  //   transform: translateX(0);
-  // }
-  // 25% {
-  //   transform: translateX(-2rem);
-  // }
-  // 50% {
-  //   transform: translateX(-4.45rem);
-  // }
-  // 75% {
-  //   transform: translateX(-2rem);
-  // }
-  // 100% {
-  //   transform: translateX(0);
-  // }
 }
