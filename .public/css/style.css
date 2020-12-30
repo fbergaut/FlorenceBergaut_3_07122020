@@ -398,7 +398,7 @@ footer ul li a:hover {
   font-weight: 700;
 }
 .dishesGroup__check {
-  display: none;
+  background: #99e2d0;
 }
 .dishesGroup__animation {
   animation: dishesGroup-animation 2000ms;
@@ -407,7 +407,7 @@ footer ul li a:hover {
   animation-delay: 200ms;
 }
 .dishesGroup__animation--delay2 {
-  animation-delay: 400ms;
+  animation-delay: 500ms;
 }
 
 @keyframes dishesGroup-animation {

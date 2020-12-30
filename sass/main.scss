@@ -221,7 +221,7 @@
     }
   }
   &__check {
-    display: none;
+    background: $clr-tertiary;
   }
   &__animation {
     animation: dishesGroup-animation 2000ms;
@@ -229,7 +229,7 @@
       animation-delay: 200ms;
     }
     &--delay2 {
-      animation-delay: 400ms;
+      animation-delay: 500ms;
     }
   }
 }
