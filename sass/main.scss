@@ -202,12 +202,14 @@
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 1.25rem;
+  position: relative;
   @include dishesGroup-shadow;
+  &__link {
+  }
   &__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    //align-items: flex-end;
     h3 {
       font-size: 1.2rem;
       flex: 1 100%;
@@ -216,12 +218,19 @@
       font-size: 0.9rem;
     }
     .price {
-      //font-size: 1.2rem;
       font-weight: 700;
     }
   }
   &__check {
     background: $clr-tertiary;
+    position: absolute;
+    top: 0;
+    left: 15.45rem;
+    opacity: 0.3;
+    .fas {
+      color: white;
+      padding: 2rem;
+    }
   }
   &__animation {
     animation: dishesGroup-animation 2000ms;

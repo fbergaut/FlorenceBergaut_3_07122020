@@ -380,6 +380,7 @@ footer ul li a:hover {
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 1.25rem;
+  position: relative;
   box-shadow: 0px 5px 7px #ebebeb;
 }
 .dishesGroup__item {
@@ -399,6 +400,14 @@ footer ul li a:hover {
 }
 .dishesGroup__check {
   background: #99e2d0;
+  position: absolute;
+  top: 0;
+  left: 15.45rem;
+  opacity: 0.3;
+}
+.dishesGroup__check .fas {
+  color: white;
+  padding: 2rem;
 }
 .dishesGroup__animation {
   animation: dishesGroup-animation 2000ms;
