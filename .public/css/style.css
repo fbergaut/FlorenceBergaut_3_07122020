@@ -381,6 +381,8 @@ footer ul li a:hover {
   margin-top: 1rem;
   border-radius: 1.25rem;
   position: relative;
+  overflow: hidden;
+  z-index: 1;
   box-shadow: 0px 5px 7px #ebebeb;
 }
 .dishesGroup__item {
@@ -402,12 +404,12 @@ footer ul li a:hover {
   background: #99e2d0;
   position: absolute;
   top: 0;
-  left: 15.45rem;
-  opacity: 0.3;
+  left: 21rem;
 }
 .dishesGroup__check .fas {
   color: white;
-  padding: 2rem;
+  padding: 1.75rem 1.2rem;
+  font-size: 1.5rem;
 }
 .dishesGroup__animation {
   animation: dishesGroup-animation 2000ms;
@@ -418,6 +420,9 @@ footer ul li a:hover {
 .dishesGroup__animation--delay2 {
   animation-delay: 500ms;
 }
+.dishesGroup:hover .dishesGroup__check {
+  animation: dishesGroup__check-animation 1000ms both;
+}
 
 @keyframes dishesGroup-animation {
   from {
@@ -427,6 +432,14 @@ footer ul li a:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes dishesGroup__check-animation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-4.45rem);
   }
 }
 

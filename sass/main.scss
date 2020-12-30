@@ -203,6 +203,8 @@
   margin-top: 1rem;
   border-radius: 1.25rem;
   position: relative;
+  overflow: hidden;
+  z-index: 1;
   @include dishesGroup-shadow;
   &__link {
   }
@@ -225,11 +227,11 @@
     background: $clr-tertiary;
     position: absolute;
     top: 0;
-    left: 15.45rem;
-    opacity: 0.3;
+    left: 21rem;
     .fas {
       color: white;
-      padding: 2rem;
+      padding: 1.75rem 1.2rem;
+      font-size: 1.5rem;
     }
   }
   &__animation {
@@ -241,6 +243,9 @@
       animation-delay: 500ms;
     }
   }
+  &:hover .dishesGroup__check {
+    animation: dishesGroup__check-animation 1000ms both;
+  }
 }
 
 @keyframes dishesGroup-animation {
@@ -251,5 +256,14 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes dishesGroup__check-animation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-4.45rem);
   }
 }
