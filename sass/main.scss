@@ -206,8 +206,6 @@
   overflow: hidden;
   z-index: 1;
   @include dishesGroup-shadow;
-  &__link {
-  }
   &__item {
     display: flex;
     flex-wrap: wrap;
@@ -215,7 +213,7 @@
     h3 {
       font-size: 1.2rem;
       position: relative;
-      //flex: 1 100%;
+      flex: 1 100%;
     }
     p {
       font-size: 0.9rem;
@@ -223,7 +221,11 @@
     .price {
       font-weight: 700;
       transform: translateX(0);
-      transition: transform 1000ms 100ms;
+      transition: transform 500ms 100ms;
+      background: white;
+      position: absolute;
+      padding: 1.5rem 2rem 0 0;
+      left: 18rem;
     }
   }
   &__dots {
@@ -232,7 +234,9 @@
     background: white;
     position: absolute;
     top: 1.05rem;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
+    transform: translateX(17rem);
+    transition: transform 600ms;
     &--regular {
       position: absolute;
       background: white;
@@ -247,7 +251,7 @@
     top: 0;
     left: 21rem;
     transform: translateX(0);
-    transition: transform 1000ms;
+    transition: transform 500ms;
     .fas {
       color: white;
       padding: 1.75rem 1.2rem;
@@ -272,6 +276,9 @@
   }
   &:hover .price {
     transform: translateX(-4.45rem);
+  }
+  &:hover .dishesGroup__dots {
+    transform: translateX(11rem);
   }
 }
 

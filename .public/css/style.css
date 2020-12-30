@@ -393,6 +393,7 @@ footer ul li a:hover {
 .dishesGroup__item h3 {
   font-size: 1.2rem;
   position: relative;
+  flex: 1 100%;
 }
 .dishesGroup__item p {
   font-size: 0.9rem;
@@ -400,7 +401,11 @@ footer ul li a:hover {
 .dishesGroup__item .price {
   font-weight: 700;
   transform: translateX(0);
-  transition: transform 1000ms 100ms;
+  transition: transform 500ms 100ms;
+  background: white;
+  position: absolute;
+  padding: 1.5rem 2rem 0 0;
+  left: 18rem;
 }
 .dishesGroup__dots {
   font-size: 1.2rem;
@@ -408,7 +413,9 @@ footer ul li a:hover {
   background: white;
   position: absolute;
   top: 1.05rem;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
+  transform: translateX(17rem);
+  transition: transform 600ms;
 }
 .dishesGroup__dots--regular {
   position: absolute;
@@ -423,7 +430,7 @@ footer ul li a:hover {
   top: 0;
   left: 21rem;
   transform: translateX(0);
-  transition: transform 1000ms;
+  transition: transform 500ms;
 }
 .dishesGroup__check .fas {
   color: white;
@@ -448,6 +455,9 @@ footer ul li a:hover {
 }
 .dishesGroup:hover .price {
   transform: translateX(-4.45rem);
+}
+.dishesGroup:hover .dishesGroup__dots {
+  transform: translateX(11rem);
 }
 
 @keyframes dishesGroup-animation {
