@@ -399,6 +399,8 @@ footer ul li a:hover {
 }
 .dishesGroup__item .price {
   font-weight: 700;
+  transform: translateX(0);
+  transition: transform 1000ms 100ms;
 }
 .dishesGroup__check {
   background: #99e2d0;
@@ -428,6 +430,9 @@ footer ul li a:hover {
 .dishesGroup:hover .fa-check-circle {
   transform: rotate(360deg);
   transition: transform 700ms ease-in-out;
+}
+.dishesGroup:hover .price {
+  transform: translateX(-4.45rem);
 }
 
 @keyframes dishesGroup-animation {
