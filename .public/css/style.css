@@ -392,7 +392,7 @@ footer ul li a:hover {
 }
 .dishesGroup__item h3 {
   font-size: 1.2rem;
-  flex: 1 100%;
+  position: relative;
 }
 .dishesGroup__item p {
   font-size: 0.9rem;
@@ -401,6 +401,21 @@ footer ul li a:hover {
   font-weight: 700;
   transform: translateX(0);
   transition: transform 1000ms 100ms;
+}
+.dishesGroup__dots {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: white;
+  position: absolute;
+  top: 1.05rem;
+  padding-right: 1rem;
+}
+.dishesGroup__dots--regular {
+  position: absolute;
+  background: white;
+  font-size: 0.9rem;
+  top: 2.45rem;
+  padding-right: 1rem;
 }
 .dishesGroup__check {
   background: #99e2d0;

@@ -214,7 +214,8 @@
     justify-content: space-between;
     h3 {
       font-size: 1.2rem;
-      flex: 1 100%;
+      position: relative;
+      //flex: 1 100%;
     }
     p {
       font-size: 0.9rem;
@@ -223,6 +224,21 @@
       font-weight: 700;
       transform: translateX(0);
       transition: transform 1000ms 100ms;
+    }
+  }
+  &__dots {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: white;
+    position: absolute;
+    top: 1.05rem;
+    padding-right: 1rem;
+    &--regular {
+      position: absolute;
+      background: white;
+      font-size: 0.9rem;
+      top: 2.45rem;
+      padding-right: 1rem;
     }
   }
   &__check {
