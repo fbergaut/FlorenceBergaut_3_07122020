@@ -156,7 +156,7 @@
   align-items: center;
   background: $clr-bgMain;
   padding: $padding-gutter;
-  border-radius: $bdRadius-restoContainer;
+  border-radius: 2.5rem 2.5rem 0 0;
   &__title {
     display: flex;
     justify-content: space-between;
