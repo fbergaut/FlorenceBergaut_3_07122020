@@ -359,11 +359,11 @@ footer ul li a:hover {
   width: 100%;
 }
 .dishesBloc__title {
+  position: relative;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 100;
   padding: 2.3rem 0 0.7rem 0;
-  position: relative;
 }
 .dishesBloc__title::after {
   content: "";
@@ -382,7 +382,6 @@ footer ul li a:hover {
   border-radius: 1.25rem;
   position: relative;
   overflow: hidden;
-  z-index: 1;
   box-shadow: 0px 5px 7px #ebebeb;
 }
 .dishesGroup__item {
@@ -392,6 +391,7 @@ footer ul li a:hover {
 }
 .dishesGroup__item h3 {
   font-size: 1.2rem;
+  position: relative;
   flex: 1 100%;
 }
 .dishesGroup__item p {
@@ -399,6 +399,31 @@ footer ul li a:hover {
 }
 .dishesGroup__item .price {
   font-weight: 700;
+  transform: translateX(0);
+  transition: transform 500ms 70ms;
+  background: white;
+  position: absolute;
+  padding: 1.5rem 2rem 0 0;
+  left: 18rem;
+}
+.dishesGroup__dots {
+  font-size: 1.2rem;
+  font-weight: 700;
+  top: 1.05rem;
+  position: absolute;
+  background: white;
+  padding-right: 1.5rem;
+  transform: translateX(17rem);
+  transition: transform 550ms;
+}
+.dishesGroup__dots--regular {
+  font-size: 0.9rem;
+  top: 2.45rem;
+  position: absolute;
+  background: white;
+  padding-right: 1.5rem;
+  transform: translateX(17rem);
+  transition: transform 550ms;
 }
 .dishesGroup__check {
   background: #99e2d0;
@@ -406,7 +431,7 @@ footer ul li a:hover {
   top: 0;
   left: 21rem;
   transform: translateX(0);
-  transition: transform 1000ms;
+  transition: transform 500ms;
 }
 .dishesGroup__check .fas {
   color: white;
@@ -425,9 +450,18 @@ footer ul li a:hover {
 .dishesGroup:hover .dishesGroup__check {
   transform: translateX(-4.45rem);
 }
+.dishesGroup:hover .price {
+  transform: translateX(-4.45rem);
+}
 .dishesGroup:hover .fa-check-circle {
   transform: rotate(360deg);
   transition: transform 700ms ease-in-out;
+}
+.dishesGroup:hover .dishesGroup__dots {
+  transform: translateX(10.7rem);
+}
+.dishesGroup:hover .dishesGroup__dots--regular {
+  transform: translateX(10.7rem);
 }
 
 @keyframes dishesGroup-animation {
