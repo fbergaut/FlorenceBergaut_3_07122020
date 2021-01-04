@@ -472,5 +472,48 @@ footer ul li a:hover {
     transform: translateY(0);
   }
 }
+.spinningLoader {
+  background-color: #240f52;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.outer-ring {
+  position: absolute;
+  left: calc(50% - 50px);
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(135deg, #9356dc 50%, #99e2d0 80%);
+  border-radius: 50%;
+  /*  Rotate  */
+  animation: rotate 2000ms infinite;
+}
+
+.inner-ring {
+  position: absolute;
+  left: calc(50% - 45px);
+  height: 90px;
+  width: 90px;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
