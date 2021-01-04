@@ -156,7 +156,7 @@
   align-items: center;
   background: $clr-bgMain;
   padding: $padding-gutter;
-  border-radius: 2.5rem 2.5rem 0 0;
+  border-radius: $bdRadius-restoContainer;
   &__title {
     display: flex;
     justify-content: space-between;
@@ -180,11 +180,8 @@
   flex-direction: column;
   width: 100%;
   &__title {
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 100;
-    padding: 2.3rem 0 0.7rem 0;
     position: relative;
+    @include dishesBloc-title;
     &::after {
       content: "";
       width: 2.5rem;
@@ -204,7 +201,6 @@
   border-radius: 1.25rem;
   position: relative;
   overflow: hidden;
-  z-index: 1;
   @include dishesGroup-shadow;
   &__item {
     display: flex;
@@ -231,20 +227,12 @@
   &__dots {
     font-size: 1.2rem;
     font-weight: 700;
-    background: white;
-    position: absolute;
     top: 1.05rem;
-    padding-right: 1.5rem;
-    transform: translateX(17rem);
-    transition: transform 550ms;
+    @include dots;
     &--regular {
-      position: absolute;
-      background: white;
       font-size: 0.9rem;
       top: 2.45rem;
-      padding-right: 1.5rem;
-      transform: translateX(17rem);
-      transition: transform 550ms;
+      @include dots;
     }
   }
   &__check {
@@ -270,20 +258,20 @@
     }
   }
   &:hover .dishesGroup__check {
-    transform: translateX(-4.45rem);
+    @include animationCheckPrice;
+  }
+  &:hover .price {
+    @include animationCheckPrice;
   }
   &:hover .fa-check-circle {
     transform: rotate(360deg);
     transition: transform 700ms ease-in-out;
   }
-  &:hover .price {
-    transform: translateX(-4.45rem);
-  }
   &:hover .dishesGroup__dots {
-    transform: translateX(10.7rem);
+    @include animationDots;
   }
   &:hover .dishesGroup__dots--regular {
-    transform: translateX(10.7rem);
+    @include animationDots;
   }
 }
 

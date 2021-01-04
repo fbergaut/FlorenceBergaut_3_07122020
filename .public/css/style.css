@@ -359,11 +359,11 @@ footer ul li a:hover {
   width: 100%;
 }
 .dishesBloc__title {
+  position: relative;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 100;
   padding: 2.3rem 0 0.7rem 0;
-  position: relative;
 }
 .dishesBloc__title::after {
   content: "";
@@ -382,7 +382,6 @@ footer ul li a:hover {
   border-radius: 1.25rem;
   position: relative;
   overflow: hidden;
-  z-index: 1;
   box-shadow: 0px 5px 7px #ebebeb;
 }
 .dishesGroup__item {
@@ -410,18 +409,18 @@ footer ul li a:hover {
 .dishesGroup__dots {
   font-size: 1.2rem;
   font-weight: 700;
-  background: white;
-  position: absolute;
   top: 1.05rem;
+  position: absolute;
+  background: white;
   padding-right: 1.5rem;
   transform: translateX(17rem);
   transition: transform 550ms;
 }
 .dishesGroup__dots--regular {
-  position: absolute;
-  background: white;
   font-size: 0.9rem;
   top: 2.45rem;
+  position: absolute;
+  background: white;
   padding-right: 1.5rem;
   transform: translateX(17rem);
   transition: transform 550ms;
@@ -451,12 +450,12 @@ footer ul li a:hover {
 .dishesGroup:hover .dishesGroup__check {
   transform: translateX(-4.45rem);
 }
+.dishesGroup:hover .price {
+  transform: translateX(-4.45rem);
+}
 .dishesGroup:hover .fa-check-circle {
   transform: rotate(360deg);
   transition: transform 700ms ease-in-out;
-}
-.dishesGroup:hover .price {
-  transform: translateX(-4.45rem);
 }
 .dishesGroup:hover .dishesGroup__dots {
   transform: translateX(10.7rem);
