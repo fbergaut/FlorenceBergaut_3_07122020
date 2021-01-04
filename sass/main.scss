@@ -33,6 +33,7 @@
 .section1__title {
   background-color: $clr-bgMain;
   text-align: center;
+  z-index: -1;
   h1 {
     padding: 2.5rem 0 0 0;
   }
@@ -286,17 +287,19 @@
   }
 }
 
-//*************************resto sectionSpinningLoader
+//*************************SpinningLoader
 
-.spinningLoader {
-  background-color: #240f52;
-  background-image: $grd-btnMain;
+#spinningLoader {
+  background: $grd-btnMain;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99;
+  z-index: 1;
+  position: absolute;
+  animation: opacityLoader 800ms 4000ms ease both;
 }
 
 .center {
@@ -335,5 +338,14 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes opacityLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
