@@ -159,6 +159,9 @@ h3 {
   object-fit: cover;
   padding-bottom: 79rem;
 }
+.headerResto .imgHeaderLaNoteEnchantee {
+  padding-bottom: 85rem;
+}
 
 footer {
   padding: 0 1.5rem;
@@ -347,12 +350,13 @@ footer ul li a:hover {
 .restoContainer__title {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   width: 100%;
   padding-top: 2.188rem;
 }
 .restoContainer__title h1 {
   font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .restoContainer__title .position {
   top: 0.2rem;
@@ -402,9 +406,10 @@ footer ul li a:hover {
   justify-content: space-between;
 }
 .dishesGroup__item h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   position: relative;
   flex: 1 100%;
+  padding-bottom: 0.1rem;
 }
 .dishesGroup__item p {
   font-size: 0.9rem;
@@ -458,6 +463,9 @@ footer ul li a:hover {
 }
 .dishesGroup__animation--delay2 {
   animation-delay: 500ms;
+}
+.dishesGroup__animation--delay3 {
+  animation-delay: 800ms;
 }
 .dishesGroup:hover .dishesGroup__check {
   transform: translateX(-4.45rem);
