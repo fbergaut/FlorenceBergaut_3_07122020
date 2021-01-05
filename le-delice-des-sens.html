@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="Une cuisine fusion Asie/Europe." />
     <meta name="twitter:creator" content="@author_handle" />
     <!-- Twitter Summary card images must be at least 200x200px -->
-    <meta name="twitter:image" content="http://www.ohmyfood.com/img/image.jpg"/>
+    <meta name="twitter:image" content="http://www.ohmyfood.com/img/image.jpg" />
 
     <!--Kit code fontawesome-->
     <script src="https://kit.fontawesome.com/e0b5da58c3.js" crossorigin="anonymous"></script>
@@ -47,149 +47,160 @@
         <img srcset="
             public/img/restoPages/le-delice-des-sens-desktop.jpg  992w,
             public/img/restoPages/le-delice-des-sens-ultra.jpg   1440w"
-            sizes="100vw" src="public/img/restoPages/le-delice-des-sens-desktop.jpg" alt="Restaurant La note enchantée"/>
+            sizes="100vw" src="public/img/restoPages/le-delice-des-sens-desktop.jpg" alt="Restaurant Le délice des sens"/>
       </picture>
     </header>
 
     <!--Section-->
-    <section>
-      <h1>La note enchantée</h1>
-      <i class="fas fa-heart"></i>
+    <section class="restoContainer">
+      <div class="restoContainer__title">
+        <h1>Le délice des sens</h1>
+        <a href="#">
+          <div class="heartBtn position"></div>
+          <i class="far fa-heart"></i>
+        </a>
+      </div>
 
-      <!--Section Entrées-->
+      <!--Entrées-->
       <div class="dishesBloc">
         <h2 class="dishesBloc__title">Entrées</h2>
 
-        <div class="dishesGroup">
-          <a href="#" class="dishesGroup__link">
+        <div class="dishesGroup dishesGroup__animation">
+          <a href="#">
             <div class="dishesGroup__item">
               <h3>Tartare de thon</h3>
               <p>Assaisonné au yuzu</p>
-              <p>25€</p>
+              <p class="price">25€</p>
             </div>
-            <div class="dishesGroup__ckeck">
+            <div class="dishesGroup__check">
               <i class="fas fa-check-circle"></i>
             </div>
           </a>
         </div>
 
-        <div class="dishesGroup">
-          <a href="#" class="dishesGroup__link">
+        <div class="dishesGroup dishesGroup__animation dishesGroup__animation--delay1">
+          <a href="#">
             <div class="dishesGroup__item">
               <h3>Bouchée de homard croustillant</h3>
+              <p class="dishesGroup__dots">...</p><br>
               <p>Et sa farandole de petits légumes</p>
-              <p>35€</p>
+              <p class="dishesGroup__dots--regular">...</p>
+              <p class="price">35€</p>
             </div>
-            <div class="dishesGroup__ckeck">
+            <div class="dishesGroup__check">
               <i class="fas fa-check-circle"></i>
             </div>
           </a>
         </div>
 
-        <div class="dishesGroup">
-          <a href="#" class="dishesGroup__link">
+        <div class="dishesGroup dishesGroup__animation dishesGroup__animation--delay2">
+          <a href="#">
             <div class="dishesGroup__item">
               <h3>Velouté de cèpes</h3>
               <p>Et sa farandole de petits légumes</p>
-              <p>20€</p>
+              <p class="dishesGroup__dots--regular">...</p>
+              <p class="price">20€</p>
             </div>
-            <div class="dishesGroup__ckeck">
+            <div class="dishesGroup__check">
               <i class="fas fa-check-circle"></i>
             </div>
           </a>
         </div>
       </div>
 
-      <!--Section Plats-->
+      <!--Plats-->
       <div class="dishesBloc">
         <h2 class="dishesBloc__title">Plats</h2>
 
-        <div class="dishesGroup">
-          <a href="#" class="dishesGroup__link">
+        <div class="dishesGroup dishesGroup__animation">
+          <a href="#">
             <div class="dishesGroup__item">
-              <h3>Poulet rôti aux herbes de Provence</h3>
+              <h3>Poulet rôti aux herbe de Provence</h3>
+              <p class="dishesGroup__dots">...</p><br>
               <p>Et sa crème de truffe</p>
-              <p>40€</p>
+              <p class="price">40€</p>
             </div>
-            <div class="dishesGroup__ckeck">
+            <div class="dishesGroup__check">
               <i class="fas fa-check-circle"></i>
             </div>
           </a>
         </div>
 
-        <div class="dishesGroup">
-          <a href="#" class="dishesGroup__link">
+        <div class="dishesGroup dishesGroup__animation dishesGroup__animation--delay1">
+          <a href="#">
             <div class="dishesGroup__item">
               <h3>Langouste rôtie</h3>
               <p>Et ses légumes de saison</p>
-              <p>35€</p>
+              <p class="price">35€</p>
             </div>
-            <div class="dishesGroup__ckeck">
+            <div class="dishesGroup__check">
               <i class="fas fa-check-circle"></i>
             </div>
           </a>
         </div>
 
-        <div class="dishesGroup">
-          <a href="#" class="dishesGroup__link">
+        <div class="dishesGroup dishesGroup__animation dishesGroup__animation--delay2">
+          <a href="#">
             <div class="dishesGroup__item">
               <h3>Côte de boeuf Angus</h3>
               <p>Et sa purée de panais</p>
-              <p>44€</p>
+              <p class="price">44€</p>
             </div>
-            <div class="dishesGroup__ckeck">
+            <div class="dishesGroup__check">
               <i class="fas fa-check-circle"></i>
             </div>
           </a>
         </div>
       </div>
 
-      <!--Section Desserts-->
+      <!--Desserts-->
       <div class="dishesBloc">
         <h2 class="dishesBloc__title">Desserts</h2>
 
-        <div class="dishesGroup">
-          <a href="#" class="dishesGroup__link">
+        <div class="dishesGroup dishesGroup__animation">
+          <a href="#">
             <div class="dishesGroup__item">
               <h3>Farandole de desserts</h3>
+              <p class="dishesGroup__dots">...</p><br>
               <p>Du chef</p>
-              <p>18€</p>
+              <p class="price">18€</p>
             </div>
-            <div class="dishesGroup__ckeck">
+            <div class="dishesGroup__check">
               <i class="fas fa-check-circle"></i>
             </div>
           </a>
         </div>
 
-        <div class="dishesGroup">
-          <a href="#" class="dishesGroup__link">
+        <div class="dishesGroup dishesGroup__animation dishesGroup__animation--delay1">
+          <a href="#">
             <div class="dishesGroup__item">
               <h3>Crème brulée</h3>
               <p>Revisitée</p>
-              <p>22€</p>
+              <p class="price">22€</p>
             </div>
-            <div class="dishesGroup__ckeck">
+            <div class="dishesGroup__check">
               <i class="fas fa-check-circle"></i>
             </div>
           </a>
         </div>
 
-        <div class="dishesGroup">
-          <a href="#" class="dishesGroup__link">
+        <div class="dishesGroup dishesGroup__animation dishesGroup__animation--delay2">
+          <a href="#">
             <div class="dishesGroup__item">
               <h3>Tiramisu</h3>
               <p>À la noisette</p>
-              <p>23€</p>
+              <p class="price">23€</p>
             </div>
-            <div class="dishesGroup__ckeck">
+            <div class="dishesGroup__check">
               <i class="fas fa-check-circle"></i>
             </div>
           </a>
         </div>
       </div>
 
-      <button type="submit" class="mainBtn">Commander</button>
+      <button type="submit" class="mainBtn restoBtn">Commander</button>
     </section>
+
 
     <!--Footer-->
     <footer>

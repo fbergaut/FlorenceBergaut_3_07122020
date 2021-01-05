@@ -177,11 +177,12 @@
   &__title {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     width: 100%;
     padding-top: 2.188rem;
     h1 {
       font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     .position {
       top: 0.2rem;
@@ -227,9 +228,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     h3 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       position: relative;
       flex: 1 100%;
+      padding-bottom: 0.1rem;
     }
     p {
       font-size: 0.9rem;
@@ -275,6 +277,9 @@
     }
     &--delay2 {
       animation-delay: 500ms;
+    }
+    &--delay3 {
+      animation-delay: 800ms;
     }
   }
   &:hover .dishesGroup__check {
