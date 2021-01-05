@@ -1,0 +1,196 @@
+//*************************SpinningLoader
+
+#spinningLoader {
+  background: $grd-btnMain;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.outer-ring {
+  position: absolute;
+  left: calc(50% - 50px);
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(
+    135deg,
+    $clr-primary 50%,
+    $clr-tertiary 80%
+  );
+  border-radius: 50%;
+  animation: rotate 2000ms linear infinite;
+}
+
+.inner-ring {
+  position: absolute;
+  left: calc(50% - 45px);
+  height: 90px;
+  width: 90px;
+  background-image: $grd-btnMain;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+//*************************On load
+
+.animateOpacity {
+  animation: opacityLoader 800ms 4000ms ease both;
+}
+
+@keyframes opacityLoader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//*************************index section1 Booking
+
+.section1__location {
+  background-color: $clr-location;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .fas {
+    padding: 1.1rem 1rem 1.1rem 0;
+  }
+  h2 {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+
+.section1__title {
+  background-color: $clr-bgMain;
+  text-align: center;
+  z-index: -1;
+  h1 {
+    padding: 2.5rem 0 0 0;
+  }
+  h2 {
+    font-weight: 100;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    padding: 1rem 0 0 0;
+  }
+}
+
+//*************************index section2 Operation
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  padding: $padding-gutter;
+  padding-bottom: 3rem;
+  h1 {
+    padding: $padding-h1;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__label {
+    width: 100%;
+    background: $clr-bgMain;
+    display: flex;
+    align-items: center;
+    padding: 1.8rem;
+    margin: 1rem 0;
+    box-shadow: 0px 5px 7px lighten($clr-btnMain-shadow, 10%);
+    border-radius: 20px;
+    position: relative;
+    p {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: $clr-primary;
+      padding: 0.5rem;
+      color: white;
+      font-weight: 400;
+      font-size: 0.8rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: -0.8rem;
+    }
+    .fas {
+      padding: 0 1rem;
+      font-size: 1rem;
+      color: darken($clr-bgMain, 50%);
+    }
+    &:hover {
+      background: lighten($clr-primary, 35%);
+      cursor: pointer;
+      .fas {
+        color: $clr-primary;
+      }
+    }
+  }
+}
+
+//*************************index section3 Restaurants
+
+.section3 {
+  padding: $padding-gutter;
+  background: $clr-bgMain;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    padding: $padding-h1;
+  }
+}
+
+.restaurantCard {
+  background: $clr-bgNeutral;
+  width: 100%;
+  border-radius: 1.25rem;
+  margin-bottom: 2.5rem;
+  @include restaurantCard-shadow;
+  &__img {
+    position: relative;
+    .newLabel {
+      @include newLabel;
+    }
+    picture img {
+      width: 100%;
+      height: auto;
+      border-radius: 1.25rem 1.25rem 0 0;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0 0.8rem 0;
+  }
+  &__nameLocation {
+    padding-left: 1rem;
+  }
+  .far {
+    font-size: 1.6rem;
+    padding: 0.4rem 1.55rem 0 0;
+  }
+}

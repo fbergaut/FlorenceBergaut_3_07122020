@@ -1,0 +1,32 @@
+.restoContainer {
+  position: absolute;
+  top: 18rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: $clr-bgMain;
+  padding: $padding-gutter;
+  border-radius: 2.5rem 2.5rem 0 0;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 2.188rem;
+    h1 {
+      font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
+      font-size: 1.6rem;
+    }
+    .position {
+      top: 0.2rem;
+    }
+    .far {
+      font-size: 1.7rem;
+      padding-right: 1.5rem;
+    }
+  }
+  .restoBtn {
+    margin-bottom: 5rem;
+  }
+}
