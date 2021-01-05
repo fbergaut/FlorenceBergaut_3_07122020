@@ -29,7 +29,14 @@
     <script src="https://kit.fontawesome.com/e0b5da58c3.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body onload="myFunction()">
+    <!--SpinningLoader-->
+    <div id="spinningLoader">
+      <div class="outer-ring center"></div>
+      <div class="inner-ring center"></div>
+    </div>
+
+    <div id="wrapper" class="animateOpacity">
     <!--Header-->
     <header class="headerMain">
       <a href="index.html"><img class="headerMain__logo" srcset="
@@ -40,7 +47,7 @@
     </header>
 
     
-    <div class="container">
+    
 
       <!--Section 1 booking-->
       <section class="section1">
@@ -84,7 +91,7 @@
         <h1>Restaurants</h1>
 
         <div class="restaurantCard">
-          <a href="#">
+          <a href="la-palette-du-gout.html">
             <div class="restaurantCard__img">
                 <p class="newLabel">Nouveau</p>
               <picture>
@@ -110,7 +117,7 @@
         </div>
 
         <div class="restaurantCard">
-          <a href="#" class="restaurantCard__resultLink">
+          <a href="la-note-enchantee.html" class="restaurantCard__resultLink">
             <div class="restaurantCard__img">
               <p class="newLabel">Nouveau</p>
               <picture>
@@ -135,7 +142,7 @@
         </div>
 
         <div class="restaurantCard">
-          <a href="#" class="restaurantCard__resultLink">
+          <a href="a-la-française.html" class="restaurantCard__resultLink">
             <div class="restaurantCard__img">
               <picture>
                 <source media="(max-width: 375px)" srcset="public/img/home/a-la-francaise-mobile.jpg 375w" sizes="100vw"/>
@@ -159,7 +166,7 @@
         </div>
 
         <div class="restaurantCard">
-          <a href="#" class="restaurantCard__resultLink">
+          <a href="le-delice-des-sens.html" class="restaurantCard__resultLink">
             <div class="restaurantCard__img">
               <picture>
                 <source media="(max-width: 375px)" srcset="public/img/home/le-delice-des-sens-mobile.jpg 375w" sizes="100vw"/>
@@ -182,7 +189,6 @@
           </a>
         </div>
       </section>
-    </div>
 
     <!--Footer-->
     <footer>
@@ -202,5 +208,19 @@
         </ul>
       </div>
     </footer>
+    </div>
+
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 4000);
+      }
+
+      function showPage() {
+        document.getElementById("spinningLoader").style.display = "none";
+        document.getElementById("wrapper").style.display = "block";
+      }
+    </script>
   </body>
 </html>
