@@ -157,8 +157,8 @@
     padding-left: 1rem;
   }
   .far {
-    padding: 0.4rem 1.55rem 0 0;
     font-size: 1.6rem;
+    padding: 0.4rem 1.55rem 0 0;
   }
 }
 
@@ -332,9 +332,6 @@
     $clr-tertiary 80%
   );
   border-radius: 50%;
-
-  /*  Rotate  */
-
   animation: rotate 2000ms linear infinite;
 }
 
