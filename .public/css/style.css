@@ -185,6 +185,18 @@ footer ul li a:hover {
   color: #ff79da;
 }
 
+.animateOpacity {
+  animation: opacityLoader 800ms 4000ms ease both;
+}
+
+@keyframes opacityLoader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section1__location {
   background-color: #eaeaea;
   display: flex;
@@ -483,7 +495,6 @@ footer ul li a:hover {
   align-items: center;
   z-index: 1;
   position: absolute;
-  animation: opacityLoader 800ms 4000ms ease both;
 }
 
 .center {
@@ -498,7 +509,7 @@ footer ul li a:hover {
   background-image: linear-gradient(135deg, #9356dc 50%, #99e2d0 80%);
   border-radius: 50%;
   /*  Rotate  */
-  animation: rotate 2000ms infinite;
+  animation: rotate 2000ms linear infinite;
 }
 
 .inner-ring {
@@ -516,14 +527,6 @@ footer ul li a:hover {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@keyframes opacityLoader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 

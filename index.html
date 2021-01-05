@@ -29,12 +29,14 @@
     <script src="https://kit.fontawesome.com/e0b5da58c3.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body onload="myFunction()">
     <!--SpinningLoader-->
     <div id="spinningLoader">
       <div class="outer-ring center"></div>
       <div class="inner-ring center"></div>
     </div>
+
+    <div id="wrapper" class="animateOpacity">
     <!--Header-->
     <header class="headerMain">
       <a href="index.html"><img class="headerMain__logo" srcset="
@@ -45,7 +47,7 @@
     </header>
 
     
-    <div class="container">
+    
 
       <!--Section 1 booking-->
       <section class="section1">
@@ -187,7 +189,6 @@
           </a>
         </div>
       </section>
-    </div>
 
     <!--Footer-->
     <footer>
@@ -207,5 +208,19 @@
         </ul>
       </div>
     </footer>
+    </div>
+
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 4000);
+      }
+
+      function showPage() {
+        document.getElementById("spinningLoader").style.display = "none";
+        document.getElementById("wrapper").style.display = "block";
+      }
+    </script>
   </body>
 </html>

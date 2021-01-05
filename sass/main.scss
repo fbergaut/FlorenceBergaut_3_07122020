@@ -12,6 +12,21 @@
 //@import "./layout/container";
 @import "./layout/footer";
 
+//*************************On load
+
+.animateOpacity {
+  animation: opacityLoader 800ms 4000ms ease both;
+}
+
+@keyframes opacityLoader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 //*************************section1 location
 
 .section1__location {
@@ -299,7 +314,6 @@
   align-items: center;
   z-index: 1;
   position: absolute;
-  animation: opacityLoader 800ms 4000ms ease both;
 }
 
 .center {
@@ -320,7 +334,7 @@
 
   /*  Rotate  */
 
-  animation: rotate 2000ms infinite;
+  animation: rotate 2000ms linear infinite;
 }
 
 .inner-ring {
@@ -338,14 +352,5 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes opacityLoader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
