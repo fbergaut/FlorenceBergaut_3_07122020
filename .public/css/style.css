@@ -158,13 +158,10 @@ h3 {
 }
 .headerResto picture img {
   width: 100%;
+  max-width: 1359px;
   height: auto;
   object-fit: cover;
-  padding-bottom: 78rem;
   background: #f6f6f6;
-}
-.headerResto .imgHeaderLaNoteEnchantee {
-  padding-bottom: 84rem;
 }
 
 .restoContainer {
@@ -279,7 +276,7 @@ h3 {
 .dishesGroup__item .price {
   font-weight: 700;
   transform: translateX(0);
-  transition: transform 500ms 70ms;
+  transition: transform 500ms;
   background: white;
   position: absolute;
   padding: 1.5rem 2rem 0 0;
@@ -310,13 +307,13 @@ h3 {
   background: #99e2d0;
   position: absolute;
   top: 0;
-  right: -3.9rem;
+  right: -4.1rem;
   transform: translateX(0);
   transition: transform 500ms;
 }
 .dishesGroup__check .fas {
   color: white;
-  padding: 1.75rem 1.2rem;
+  padding: 1.75rem 1.3rem;
   font-size: 1.5rem;
 }
 .dishesGroup__animation {
@@ -358,6 +355,14 @@ h3 {
     transform: translateY(0);
   }
 }
+@media screen and (min-width: 992px) {
+  .dishesGroup h3 {
+    font-size: 0.9rem;
+  }
+  .dishesGroup p {
+    font-size: 0.7rem;
+  }
+}
 footer {
   padding: 0 1.5rem;
   background: #353535;
@@ -380,6 +385,10 @@ footer ul li a .fa-hands-helping {
 }
 footer ul li a:hover {
   color: #ff79da;
+}
+footer .restopage {
+  position: absolute;
+  top: 40rem;
 }
 
 #spinningLoader {

@@ -38,12 +38,9 @@
   }
   picture img {
     width: 100%;
+    max-width: 1359px;
     height: auto;
     object-fit: cover;
-    padding-bottom: 78rem;
     background: $clr-bgMain;
-  }
-  .imgHeaderLaNoteEnchantee {
-    padding-bottom: 84rem;
   }
 }

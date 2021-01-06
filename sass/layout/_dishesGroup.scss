@@ -23,7 +23,7 @@
     .price {
       font-weight: 700;
       transform: translateX(0);
-      transition: transform 500ms 70ms;
+      transition: transform 500ms;
       background: white;
       position: absolute;
       padding: 1.5rem 2rem 0 0;
@@ -45,12 +45,12 @@
     background: $clr-tertiary;
     position: absolute;
     top: 0;
-    right: -3.9rem;
+    right: -4.1rem;
     transform: translateX(0);
     transition: transform 500ms;
     .fas {
       color: white;
-      padding: 1.75rem 1.2rem;
+      padding: 1.75rem 1.3rem;
       font-size: 1.5rem;
     }
   }
@@ -97,7 +97,13 @@
 
 //*************************media-queries
 
-@media screen and (min-width: map-get($breakpoints, mobile)) {
+@media screen and (min-width: map-get($breakpoints, desktop)) {
   .dishesGroup {
+    h3 {
+      font-size: 0.9rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
   }
 }
