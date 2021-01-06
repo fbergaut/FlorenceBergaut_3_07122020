@@ -33,6 +33,7 @@
   }
   &__logo {
     width: 55%;
+    max-width: 200px;
     padding: 1rem;
   }
   picture img {
@@ -44,12 +45,5 @@
   }
   .imgHeaderLaNoteEnchantee {
     padding-bottom: 84rem;
-  }
-}
-
-@media screen and (min-width: map-get($breakpoints, mobile)) {
-  .headerMain__logo {
-    //width: 55%;
-    max-width: 200px;
   }
 }
