@@ -78,3 +78,17 @@
 @mixin animationCheckPrice {
   transform: translateX(-4.45rem);
 }
+
+//*************************responsive
+
+@mixin mobile-only {
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
