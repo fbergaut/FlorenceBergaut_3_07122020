@@ -196,6 +196,8 @@
   }
 }
 
+//*************************media-queries
+
 @media screen and (min-width: map-get($breakpoints, mobile)) {
   .section2 {
     &__group {

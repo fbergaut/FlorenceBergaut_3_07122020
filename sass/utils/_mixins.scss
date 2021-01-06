@@ -62,19 +62,20 @@
 @mixin dots {
   position: absolute;
   background: white;
+  right: -3.9rem;
   padding-right: 1.5rem;
-  transform: translateX(17rem);
-  transition: transform 550ms;
+  transform: translateX(0);
+  transition: transform 500ms;
 }
 
 //*************************DishesGroup-animationDots
 
 @mixin animationDots {
-  transform: translateX(10.7rem);
+  transform: translateX(-10.7rem);
 }
 
 //*************************DishesGroup-animationCheckPrice
 
 @mixin animationCheckPrice {
-  transform: translateX(-4.45rem);
+  transform: translateX(-3.9rem);
 }
