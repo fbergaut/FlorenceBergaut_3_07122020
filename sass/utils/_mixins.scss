@@ -23,7 +23,7 @@
 @mixin newLabel {
   position: absolute;
   top: 0.8rem;
-  left: 14.5rem;
+  right: 1rem;
   background: $clr-tertiary;
   padding: $padding-newLabel;
   color: darken($clr-tertiary, 40%);

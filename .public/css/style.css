@@ -515,7 +515,7 @@ footer ul li a:hover {
 .restaurantCard__img .newLabel {
   position: absolute;
   top: 0.8rem;
-  left: 14.5rem;
+  right: 1rem;
   background: #99e2d0;
   padding: 0.2rem 0.8rem;
   color: #278870;
