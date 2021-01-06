@@ -129,6 +129,7 @@ h3 {
 }
 .headerMain__logo {
   width: 55%;
+  max-width: 200px;
   padding: 1rem;
 }
 
@@ -164,6 +165,11 @@ h3 {
   padding-bottom: 84rem;
 }
 
+@media screen and (min-width: 768px) {
+  .headerMain__logo {
+    max-width: 200px;
+  }
+}
 .restoContainer {
   position: absolute;
   top: 18rem;

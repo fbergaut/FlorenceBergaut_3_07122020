@@ -81,14 +81,15 @@
 
 //*************************responsive
 
-@mixin mobile-only {
-    @media screen and (min-width: map-get($breakpoints, mobile)) {
-    @content;
-  }
-}
+// @mixin mobile-only {
+//     @media screen and (min-width: map-get($breakpoints, mobile)) {
+//     .headerMain__logo {
+//       width: 55%;
+//     }
+//   }
+// }
 
-@mixin desktop-only {
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-    @content;
-  }
-}
+// @mixin desktop-only {
+//     @media screen and (min-width: map-get($breakpoints, desktop)) {
+//   }
+// }
