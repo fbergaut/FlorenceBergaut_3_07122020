@@ -1,0 +1,17 @@
+.dishesBloc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__title {
+    position: relative;
+    @include dishesBloc-title;
+    &::after {
+      content: "";
+      width: 2.5rem;
+      position: absolute;
+      border-bottom: 0.3rem solid $clr-tertiary;
+      top: 4.2rem;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.restoContainer {
+  position: absolute;
+  top: 18rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: $clr-bgMain;
+  padding: $padding-gutter;
+  border-radius: 2.5rem 2.5rem 0 0;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 2.188rem;
+    h1 {
+      font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
+      font-size: 1.6rem;
+    }
+    .position {
+      top: 0.2rem;
+    }
+    .far {
+      font-size: 1.7rem;
+      padding-right: 1.5rem;
+    }
+  }
+  .restoBtn {
+    margin-bottom: 5rem;
+  }
+}
+
+//*************************media-queries
+
+@media screen and (min-width: map-get($breakpoints, desktop)) {
+  .restoContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, 3, 1fr);
+    column-gap: 2rem;
+    align-items: flex-start;
+    .restoContainer__title {
+      grid-row: 1;
+      grid-column: 1 / 4;
+    }
+    .bloc1 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .bloc2 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .bloc3 {
+      grid-column: 3;
+      grid-row: 2;
+    }
+    .restoBtn {
+      grid-column: 1 / 4;
+      grid-row: 3;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}

@@ -9,6 +9,7 @@
   }
   &__logo {
     width: 55%;
+    max-width: 200px;
     padding: 1rem;
   }
 }
@@ -32,15 +33,13 @@
   }
   &__logo {
     width: 55%;
+    max-width: 200px;
     padding: 1rem;
   }
   picture img {
     width: 100%;
+    max-width: 1359px;
     height: auto;
     object-fit: cover;
-    padding-bottom: 78rem;
-  }
-  .imgHeaderLaNoteEnchantee {
-    padding-bottom: 84rem;
   }
 }

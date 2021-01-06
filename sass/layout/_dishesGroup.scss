@@ -1,0 +1,115 @@
+.dishesGroup {
+  background: white;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  @include dishesGroup-shadow;
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    h3 {
+      font-size: 1.05rem;
+      position: relative;
+      flex: 1 100%;
+      padding-bottom: 0.1rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    .price {
+      font-weight: 700;
+      transform: translateX(0);
+      transition: transform 500ms;
+      background: white;
+      position: absolute;
+      padding: 1.5rem 2rem 0 0;
+      right: 0.01rem;
+    }
+  }
+  &__dots {
+    font-size: 1.05rem;
+    font-weight: 700;
+    top: 0.9rem;
+    @include dots;
+    &--regular {
+      font-size: 0.9rem;
+      top: 2.35rem;
+      @include dots;
+    }
+  }
+  &__check {
+    background: $clr-tertiary;
+    position: absolute;
+    top: 0;
+    right: -4.1rem;
+    transform: translateX(0);
+    transition: transform 500ms;
+    .fas {
+      color: white;
+      padding: 1.75rem 1.3rem;
+      font-size: 1.5rem;
+    }
+  }
+  &__animation {
+    animation: dishesGroup-animation 2000ms;
+    &--delay1 {
+      animation-delay: 200ms;
+    }
+    &--delay2 {
+      animation-delay: 500ms;
+    }
+    &--delay3 {
+      animation-delay: 800ms;
+    }
+  }
+  &:hover .dishesGroup__check {
+    @include animationCheckPrice;
+  }
+  &:hover .price {
+    @include animationCheckPrice;
+  }
+  &:hover .fa-check-circle {
+    transform: rotate(360deg);
+    transition: transform 700ms ease-in-out;
+  }
+  &:hover .dishesGroup__dots {
+    @include animationDots;
+  }
+  &:hover .dishesGroup__dots--regular {
+    @include animationDots;
+  }
+}
+
+@keyframes dishesGroup-animation {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+//*************************media-queries
+
+@media screen and (min-width: map-get($breakpoints, desktop)) {
+  .dishesGroup {
+    h3 {
+      font-size: 0.9rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+    &__dots {
+      &--regular {
+        top: 2.15rem;
+      }
+    }
+  }
+}
