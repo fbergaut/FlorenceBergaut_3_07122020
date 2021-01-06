@@ -402,6 +402,15 @@ footer ul li a:hover {
   width: 100%;
 }
 
+@media screen and (min-width: 992px) {
+  .restoPage {
+    top: 54rem;
+  }
+
+  .restoPage2 {
+    top: 59rem;
+  }
+}
 #spinningLoader {
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   width: 100%;

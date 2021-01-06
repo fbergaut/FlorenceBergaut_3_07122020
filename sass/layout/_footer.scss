@@ -39,3 +39,15 @@ footer {
   top: 106rem;
   width: 100%;
 }
+
+//*************************media-queries
+
+@media screen and (min-width: map-get($breakpoints, desktop)) {
+  .restoPage {
+    top: 54rem;
+  }
+
+  .restoPage2 {
+    top: 59rem;
+  }
+}
