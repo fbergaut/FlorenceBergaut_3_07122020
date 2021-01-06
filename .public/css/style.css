@@ -64,6 +64,7 @@ h3 {
 
 .mainBtn {
   width: 60%;
+  max-width: 20rem;
   margin: 2.5rem 0;
   padding: 1rem 1.2rem;
   border: none;
