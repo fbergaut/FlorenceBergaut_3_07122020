@@ -332,6 +332,7 @@ footer {
 }
 footer img {
   width: 30%;
+  max-width: 150px;
   padding: 1.8rem 0 1rem 0;
 }
 footer ul li a {
