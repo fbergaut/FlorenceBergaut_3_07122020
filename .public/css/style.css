@@ -161,7 +161,6 @@ h3 {
   max-width: 1359px;
   height: auto;
   object-fit: cover;
-  background: #f6f6f6;
 }
 
 .restoContainer {
@@ -263,9 +262,10 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .dishesGroup__item h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   position: relative;
   flex: 1 100%;
   padding-bottom: 0.1rem;
@@ -280,12 +280,12 @@ h3 {
   background: white;
   position: absolute;
   padding: 1.5rem 2rem 0 0;
-  right: 0.1rem;
+  right: 0.01rem;
 }
 .dishesGroup__dots {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  top: 1.05rem;
+  top: 0.9rem;
   position: absolute;
   background: white;
   right: -3.9rem;
@@ -295,7 +295,7 @@ h3 {
 }
 .dishesGroup__dots--regular {
   font-size: 0.9rem;
-  top: 2.45rem;
+  top: 2.35rem;
   position: absolute;
   background: white;
   right: -3.9rem;
@@ -362,6 +362,9 @@ h3 {
   .dishesGroup p {
     font-size: 0.7rem;
   }
+  .dishesGroup__dots--regular {
+    top: 2.15rem;
+  }
 }
 footer {
   padding: 0 1.5rem;
@@ -386,9 +389,17 @@ footer ul li a .fa-hands-helping {
 footer ul li a:hover {
   color: #ff79da;
 }
-footer .restopage {
+
+.restoPage {
   position: absolute;
-  top: 40rem;
+  top: 100rem;
+  width: 100%;
+}
+
+.restoPage2 {
+  position: absolute;
+  top: 106rem;
+  width: 100%;
 }
 
 #spinningLoader {
