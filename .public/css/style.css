@@ -158,7 +158,6 @@ h3 {
 }
 .headerResto picture img {
   width: 100%;
-  max-width: 1359px;
   height: auto;
   object-fit: cover;
 }
@@ -199,29 +198,29 @@ h3 {
 @media screen and (min-width: 992px) {
   .restoContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0, 30rem)) minmax(0px, 1fr);
     grid-template-rows: repeat(auto-fill, 3, 1fr);
     column-gap: 2rem;
     align-items: flex-start;
   }
   .restoContainer .restoContainer__title {
     grid-row: 1;
-    grid-column: 1/4;
+    grid-column: 2/-2;
   }
   .restoContainer .bloc1 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .restoContainer .bloc2 {
     grid-column: 2;
     grid-row: 2;
   }
-  .restoContainer .bloc3 {
+  .restoContainer .bloc2 {
     grid-column: 3;
     grid-row: 2;
   }
+  .restoContainer .bloc3 {
+    grid-column: 4;
+    grid-row: 2;
+  }
   .restoContainer .restoBtn {
-    grid-column: 1/4;
+    grid-column: 2/-2;
     grid-row: 3;
     align-self: center;
     justify-self: center;
@@ -503,7 +502,7 @@ footer ul li a:hover {
   padding-bottom: 3rem;
 }
 .section2 h1 {
-  padding: 3.2rem 0 0.8rem 0;
+  padding: 3.2rem 0 2rem 0;
 }
 .section2__group {
   width: 100%;
@@ -558,7 +557,7 @@ footer ul li a:hover {
   flex-direction: column;
 }
 .section3 h1 {
-  padding: 3.2rem 0 0.8rem 0;
+  padding: 3.2rem 0 2rem 0;
 }
 
 .restaurantCard {
