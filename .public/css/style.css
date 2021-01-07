@@ -475,7 +475,7 @@ footer ul li a:hover {
   }
 }
 .animateOpacity {
-  animation: opacityLoader 800ms 4000ms ease both;
+  animation: opacityLoader 800ms 3000ms ease both;
 }
 
 @keyframes opacityLoader {
