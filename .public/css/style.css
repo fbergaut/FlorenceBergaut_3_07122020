@@ -303,6 +303,9 @@ h3 {
   transform: translateX(0);
   transition: transform 500ms;
 }
+.dishesGroup .hidden {
+  display: none;
+}
 .dishesGroup__check {
   background: #99e2d0;
   position: absolute;
@@ -310,10 +313,14 @@ h3 {
   right: -4.1rem;
   transform: translateX(0);
   transition: transform 500ms;
+  width: 4.1rem;
+  height: 5.16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dishesGroup__check .fas {
   color: white;
-  padding: 1.75rem 1.3rem;
   font-size: 1.5rem;
 }
 .dishesGroup__animation {
@@ -329,10 +336,10 @@ h3 {
   animation-delay: 800ms;
 }
 .dishesGroup:hover .dishesGroup__check {
-  transform: translateX(-3.9rem);
+  transform: translateX(-4.1rem);
 }
 .dishesGroup:hover .price {
-  transform: translateX(-3.9rem);
+  transform: translateX(-4.1rem);
 }
 .dishesGroup:hover .fa-check-circle {
   transform: rotate(360deg);
