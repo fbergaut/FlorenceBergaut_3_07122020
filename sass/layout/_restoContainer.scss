@@ -17,9 +17,11 @@
     h1 {
       font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
       font-size: 1.6rem;
+      position: relative;
     }
     .position {
-      top: 0.2rem;
+      top: 2.3rem;
+      right: 5rem;
     }
     .far {
       font-size: 1.7rem;
@@ -47,6 +49,9 @@
     .restoContainer__title {
       grid-row: 1;
       grid-column: 2/ -2;
+      .position {
+        right: 7rem;
+      }
     }
     .bloc1 {
       grid-column: 2;
