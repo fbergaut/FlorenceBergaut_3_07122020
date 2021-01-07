@@ -198,9 +198,10 @@ h3 {
 @media screen and (min-width: 992px) {
   .restoContainer {
     display: grid;
-    grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0, 30rem)) minmax(0px, 1fr);
+    grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0, 60rem)) minmax(0px, 1fr);
     grid-template-rows: repeat(auto-fill, 3, 1fr);
     column-gap: 2rem;
+    width: 100%;
     align-items: flex-start;
   }
   .restoContainer .restoContainer__title {

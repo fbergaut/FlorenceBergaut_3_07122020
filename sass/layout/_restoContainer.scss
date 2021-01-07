@@ -36,12 +36,13 @@
 @media screen and (min-width: map-get($breakpoints, desktop)) {
   .restoContainer {
     display: grid;
-    grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0, 30rem)) minmax(
+    grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0, 60rem)) minmax(
         0px,
         1fr
       );
     grid-template-rows: repeat(auto-fill, 3, 1fr);
     column-gap: 2rem;
+    width: 100%;
     align-items: flex-start;
     .restoContainer__title {
       grid-row: 1;
