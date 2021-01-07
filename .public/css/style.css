@@ -85,9 +85,9 @@ h3 {
 
 .heartBtn {
   display: block;
-  position: relative;
-  top: 0.52rem;
-  left: -0.28rem;
+  position: absolute;
+  top: 0.8rem;
+  right: 3.5rem;
   opacity: 0;
   transform-origin: center;
 }
@@ -611,6 +611,7 @@ footer ul li a:hover {
   display: flex;
   justify-content: space-between;
   padding: 0.3rem 0 0.8rem 0;
+  position: relative;
 }
 .restaurantCard__nameLocation {
   padding-left: 1rem;
