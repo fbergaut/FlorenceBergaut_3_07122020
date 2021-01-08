@@ -27,6 +27,12 @@
     p {
       font-size: 0.9rem;
     }
+    .dots {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 50px;
+    }
     .price {
       font-weight: 700;
       transform: translateX(0);

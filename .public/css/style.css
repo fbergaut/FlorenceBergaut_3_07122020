@@ -283,6 +283,12 @@ h3 {
 .dishesGroup__item p {
   font-size: 0.9rem;
 }
+.dishesGroup__item .dots {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 50px;
+}
 .dishesGroup__item .price {
   font-weight: 700;
   transform: translateX(0);
