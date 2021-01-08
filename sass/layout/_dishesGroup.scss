@@ -1,7 +1,6 @@
 .dishesGroup {
   background: white;
   width: 100%;
-  //padding: 1rem;
   margin-top: 1rem;
   border-radius: 1.25rem;
   position: relative;
@@ -34,17 +33,13 @@
       background: white;
       position: absolute;
       padding: 1.5rem 2rem 0 0;
-      right: 0.01rem;
+      right: 0;
     }
   }
   &__dots {
-    font-size: 1.05rem;
-    font-weight: 700;
     top: 1rem;
     @include dots;
     &--regular {
-      font-size: 0.9rem;
-      top: 2.45rem;
       @include dots;
     }
   }
@@ -94,6 +89,7 @@
   &:hover .dishesGroup__dots {
     @include animationDots;
   }
+
   &:hover .dishesGroup__dots--regular {
     @include animationDots;
   }
@@ -112,6 +108,13 @@
 
 //*************************media-queries
 
+@media screen and (min-width: map-get($breakpoints, mobile)) {
+  .dishesGroup__dots,
+  .dishesGroup__dots--regular {
+    display: none;
+  }
+}
+
 @media screen and (min-width: map-get($breakpoints, desktop)) {
   .dishesGroup {
     h3 {
@@ -126,5 +129,9 @@
         top: 2.6rem;
       }
     }
+  }
+  .dishesGroup__dots,
+  .dishesGroup__dots--regular {
+    display: block;
   }
 }

@@ -290,28 +290,30 @@ h3 {
   background: white;
   position: absolute;
   padding: 1.5rem 2rem 0 0;
-  right: 0.01rem;
+  right: 0;
 }
 .dishesGroup__dots {
-  font-size: 1.05rem;
-  font-weight: 700;
   top: 1rem;
   position: absolute;
   background: white;
-  right: -3.9rem;
-  padding-right: 1.5rem;
+  right: 0;
+  width: 2.5rem;
+  transition: transform 500ms ease-out;
+}
+.dishesGroup__dots::before {
+  content: "...";
   transform: translateX(0);
-  transition: transform 500ms;
 }
 .dishesGroup__dots--regular {
-  font-size: 0.9rem;
-  top: 2.45rem;
   position: absolute;
   background: white;
-  right: -3.9rem;
-  padding-right: 1.5rem;
+  right: 0;
+  width: 2.5rem;
+  transition: transform 500ms ease-out;
+}
+.dishesGroup__dots--regular::before {
+  content: "...";
   transform: translateX(0);
-  transition: transform 500ms;
 }
 .dishesGroup .hidden {
   display: none;
@@ -356,10 +358,10 @@ h3 {
   transition: transform 700ms ease-in-out;
 }
 .dishesGroup:hover .dishesGroup__dots {
-  transform: translateX(-10.7rem);
+  transform: translateX(-7.2rem);
 }
 .dishesGroup:hover .dishesGroup__dots--regular {
-  transform: translateX(-10.7rem);
+  transform: translateX(-7.2rem);
 }
 
 @keyframes dishesGroup-animation {
@@ -370,6 +372,12 @@ h3 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media screen and (min-width: 768px) {
+  .dishesGroup__dots,
+.dishesGroup__dots--regular {
+    display: none;
   }
 }
 @media screen and (min-width: 992px) {
@@ -384,6 +392,11 @@ h3 {
   }
   .dishesGroup__dots--regular {
     top: 2.6rem;
+  }
+
+  .dishesGroup__dots,
+.dishesGroup__dots--regular {
+    display: block;
   }
 }
 footer {
