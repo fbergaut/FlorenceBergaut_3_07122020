@@ -1,7 +1,6 @@
 .dishesGroup {
   background: white;
   width: 100%;
-  //padding: 1rem;
   margin-top: 1rem;
   border-radius: 1.25rem;
   position: relative;
@@ -109,6 +108,13 @@
 
 //*************************media-queries
 
+@media screen and (min-width: map-get($breakpoints, mobile)) {
+  .dishesGroup__dots,
+  .dishesGroup__dots--regular {
+    display: none;
+  }
+}
+
 @media screen and (min-width: map-get($breakpoints, desktop)) {
   .dishesGroup {
     h3 {
@@ -123,5 +129,9 @@
         top: 2.6rem;
       }
     }
+  }
+  .dishesGroup__dots,
+  .dishesGroup__dots--regular {
+    display: block;
   }
 }

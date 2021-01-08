@@ -374,6 +374,12 @@ h3 {
     transform: translateY(0);
   }
 }
+@media screen and (min-width: 768px) {
+  .dishesGroup__dots,
+.dishesGroup__dots--regular {
+    display: none;
+  }
+}
 @media screen and (min-width: 992px) {
   .dishesGroup h3 {
     font-size: 0.9rem;
@@ -386,6 +392,11 @@ h3 {
   }
   .dishesGroup__dots--regular {
     top: 2.6rem;
+  }
+
+  .dishesGroup__dots,
+.dishesGroup__dots--regular {
+    display: block;
   }
 }
 footer {
