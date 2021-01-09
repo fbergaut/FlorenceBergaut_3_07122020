@@ -65,7 +65,7 @@
     }
   }
   &__animation {
-    animation: dishesGroup-animation 2000ms;
+    animation: animateDishesGroup 2000ms;
     &--delay1 {
       animation-delay: 200ms;
     }
@@ -92,17 +92,6 @@
 
   &:hover .dishesGroup__dots--regular {
     @include animationDots;
-  }
-}
-
-@keyframes dishesGroup-animation {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 

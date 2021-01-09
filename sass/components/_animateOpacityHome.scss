@@ -1,0 +1,14 @@
+//*************************On load
+
+.animateOpacity {
+  animation: opacityLoader 800ms 3000ms ease both;
+}
+
+@keyframes opacityLoader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
