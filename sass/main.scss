@@ -6,7 +6,10 @@
 @import "./base/base";
 @import "./base/typography";
 
+@import "./components/animateDishesGroup";
+@import "./components/animateOpacityHome";
 @import "./components/buttons";
+@import "./components/loader";
 
 @import "./layout/header";
 @import "./layout/restoContainer";

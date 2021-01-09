@@ -1,0 +1,49 @@
+//*************************SpinningLoader
+
+#spinningLoader {
+  background: $grd-btnMain;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.outer-ring {
+  position: absolute;
+  left: calc(50% - 50px);
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(
+    135deg,
+    $clr-primary 50%,
+    $clr-tertiary 80%
+  );
+  border-radius: 50%;
+  animation: rotate 2000ms linear infinite;
+}
+
+.inner-ring {
+  position: absolute;
+  left: calc(50% - 45px);
+  height: 90px;
+  width: 90px;
+  background-image: $grd-btnMain;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
