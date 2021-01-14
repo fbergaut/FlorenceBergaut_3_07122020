@@ -57,26 +57,6 @@
   box-shadow: 0px 5px 7px lighten($colour, 15%);
 }
 
-//*************************DishesGroup__dots
-
-@mixin dots {
-  position: absolute;
-  background: white;
-  right: 0;
-  width: 2.5rem;
-  transition: transform 500ms ease-out;
-  &::before {
-    content: "...";
-    transform: translateX(0);
-  }
-}
-
-//*************************DishesGroup-animationDots
-
-@mixin animationDots {
-  transform: translateX(-7.2rem);
-}
-
 //*************************DishesGroup-animationCheckPrice
 
 @mixin animationCheckPrice {

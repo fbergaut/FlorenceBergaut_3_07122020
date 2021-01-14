@@ -339,14 +339,20 @@ h3 {
   align-items: flex-end;
   padding-left: 1rem;
 }
-.dishesGroup__item h3 {
-  font-size: 1.05rem;
+.dishesGroup__item .bold {
+  font-size: 1rem;
+  font-weight: 700;
   position: relative;
-  flex: 1 100%;
-  padding-bottom: 0.1rem;
 }
 .dishesGroup__item p {
   font-size: 0.9rem;
+}
+.dishesGroup__item .ellipsis {
+  width: 75%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 50px;
 }
 .dishesGroup__item .price {
   font-weight: 700;
@@ -356,32 +362,6 @@ h3 {
   position: absolute;
   padding: 1.5rem 2rem 0 0;
   right: 0;
-}
-.dishesGroup__dots {
-  top: 1rem;
-  position: absolute;
-  background: white;
-  right: 0;
-  width: 2.5rem;
-  transition: transform 500ms ease-out;
-}
-.dishesGroup__dots::before {
-  content: "...";
-  transform: translateX(0);
-}
-.dishesGroup__dots--regular {
-  position: absolute;
-  background: white;
-  right: 0;
-  width: 2.5rem;
-  transition: transform 500ms ease-out;
-}
-.dishesGroup__dots--regular::before {
-  content: "...";
-  transform: translateX(0);
-}
-.dishesGroup .hidden {
-  display: none;
 }
 .dishesGroup__check {
   background: #99e2d0;
@@ -421,12 +401,6 @@ h3 {
 .dishesGroup:hover .fa-check-circle {
   transform: rotate(360deg);
   transition: transform 700ms ease-in-out;
-}
-.dishesGroup:hover .dishesGroup__dots {
-  transform: translateX(-7.2rem);
-}
-.dishesGroup:hover .dishesGroup__dots--regular {
-  transform: translateX(-7.2rem);
 }
 
 @media screen and (min-width: 768px) {
