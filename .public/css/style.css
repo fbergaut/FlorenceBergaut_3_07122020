@@ -401,15 +401,18 @@ h3 {
 .dishesGroup:hover .dishesGroup__item,
 .dishesGroup .dishesGroup__title,
 .dishesGroup .dishesGroup__paragraph {
-  animation: strokeLine 500ms both;
+  animation: strokeLine 2000ms both;
 }
 
 @keyframes strokeLine {
-  from {
+  0% {
     width: 100%;
   }
-  to {
-    width: 80%;
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -418,12 +421,6 @@ h3 {
   }
   .dishesGroup p {
     font-size: 0.7rem;
-  }
-  .dishesGroup__dots {
-    top: 1.4rem;
-  }
-  .dishesGroup__dots--regular {
-    top: 2.6rem;
   }
 }
 footer {
