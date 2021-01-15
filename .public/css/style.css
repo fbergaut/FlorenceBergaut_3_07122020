@@ -323,58 +323,48 @@ h3 {
   width: 100%;
   margin-top: 1rem;
   border-radius: 1.25rem;
-  position: relative;
   overflow: hidden;
-  width: 100%;
-  height: 5rem;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
   box-shadow: 0px 5px 7px #ebebeb;
 }
 .dishesGroup__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-left: 1rem;
-}
-.dishesGroup__item .bold {
-  font-size: 1rem;
-  font-weight: 700;
-  position: relative;
-}
-.dishesGroup__item p {
-  font-size: 0.9rem;
-}
-.dishesGroup__item .ellipsis {
-  width: 75%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding-right: 50px;
+  padding-left: 1rem;
 }
-.dishesGroup__item .price {
+.dishesGroup__item h3 {
+  background: #09e766;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.dishesGroup__item p {
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #139797;
+}
+.dishesGroup .price {
   font-weight: 700;
   transform: translateX(0);
   transition: transform 500ms;
-  background: white;
-  position: absolute;
-  padding: 1.5rem 2rem 0 0;
-  right: 0;
+  background: #e67206;
+  padding-right: 1.5rem;
 }
 .dishesGroup__check {
   background: #99e2d0;
-  position: absolute;
-  top: 0;
-  right: -4.1rem;
   transform: translateX(0);
   transition: transform 500ms;
   width: 4.1rem;
-  height: 5.16rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: -3.5rem;
 }
 .dishesGroup__check .fas {
   color: white;
@@ -401,6 +391,10 @@ h3 {
 .dishesGroup:hover .fa-check-circle {
   transform: rotate(360deg);
   transition: transform 700ms ease-in-out;
+}
+.dishesGroup:hover .dishesGroup__item {
+  width: 150px;
+  transition: 50ms;
 }
 
 @media screen and (min-width: 768px) {
