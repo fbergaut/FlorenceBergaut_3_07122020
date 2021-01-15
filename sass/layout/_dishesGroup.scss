@@ -12,23 +12,28 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    width: 100%;
     padding-left: 1rem;
-    h3 {
-      background: rgb(9, 231, 102);
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-    p {
-      font-size: 0.9rem;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-      background: rgb(19, 151, 151);
-    }
+    z-index: 1;
+  }
+  &__title {
+    background: rgb(9, 231, 102);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__paragraph {
+    font-size: 0.9rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background: rgb(19, 151, 151);
   }
   .price {
     font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    height: 2.75rem;
     transform: translateX(0);
     transition: transform 500ms;
     background: rgb(230, 114, 6);
@@ -43,7 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -3.5rem;
+    margin-right: -3.7rem;
     .fas {
       color: white;
       font-size: 1.5rem;
@@ -61,7 +66,7 @@
       animation-delay: 800ms;
     }
   }
-  &:hover .dishesGroup__check {
+  &:hover &__check {
     @include animationCheckPrice;
   }
   &:hover .price {
@@ -71,19 +76,24 @@
     transform: rotate(360deg);
     transition: transform 700ms ease-in-out;
   }
-  &:hover .dishesGroup__item {
-    width: 150px;
-    transition: 50ms;
+  &:hover .dishesGroup__item,
+  .dishesGroup__title,
+  .dishesGroup__paragraph {
+    animation: strokeLine 500ms both;
   }
 }
 
+@keyframes strokeLine {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 80%;
+  }
+}
 //*************************media-queries
 
 @media screen and (min-width: map-get($breakpoints, mobile)) {
-  .dishesGroup__dots,
-  .dishesGroup__dots--regular {
-    display: none;
-  }
 }
 
 @media screen and (min-width: map-get($breakpoints, desktop)) {
@@ -100,9 +110,5 @@
         top: 2.6rem;
       }
     }
-  }
-  .dishesGroup__dots,
-  .dishesGroup__dots--regular {
-    display: block;
   }
 }

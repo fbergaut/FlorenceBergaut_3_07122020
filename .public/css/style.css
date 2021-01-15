@@ -237,6 +237,7 @@ h3 {
   background: #f6f6f6;
   padding: 0 1.5rem;
   border-radius: 2.5rem 2.5rem 0 0;
+  width: 100%;
 }
 .restoContainer__title {
   display: flex;
@@ -333,15 +334,17 @@ h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 100%;
   padding-left: 1rem;
+  z-index: 1;
 }
-.dishesGroup__item h3 {
+.dishesGroup__title {
   background: #09e766;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.dishesGroup__item p {
+.dishesGroup__paragraph {
   font-size: 0.9rem;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -350,6 +353,9 @@ h3 {
 }
 .dishesGroup .price {
   font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+  height: 2.75rem;
   transform: translateX(0);
   transition: transform 500ms;
   background: #e67206;
@@ -364,7 +370,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -3.5rem;
+  margin-right: -3.7rem;
 }
 .dishesGroup__check .fas {
   color: white;
@@ -383,24 +389,27 @@ h3 {
   animation-delay: 800ms;
 }
 .dishesGroup:hover .dishesGroup__check {
-  transform: translateX(-4.1rem);
+  transform: translateX(-3rem);
 }
 .dishesGroup:hover .price {
-  transform: translateX(-4.1rem);
+  transform: translateX(-3rem);
 }
 .dishesGroup:hover .fa-check-circle {
   transform: rotate(360deg);
   transition: transform 700ms ease-in-out;
 }
-.dishesGroup:hover .dishesGroup__item {
-  width: 150px;
-  transition: 50ms;
+.dishesGroup:hover .dishesGroup__item,
+.dishesGroup .dishesGroup__title,
+.dishesGroup .dishesGroup__paragraph {
+  animation: strokeLine 500ms both;
 }
 
-@media screen and (min-width: 768px) {
-  .dishesGroup__dots,
-.dishesGroup__dots--regular {
-    display: none;
+@keyframes strokeLine {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 80%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -415,11 +424,6 @@ h3 {
   }
   .dishesGroup__dots--regular {
     top: 2.6rem;
-  }
-
-  .dishesGroup__dots,
-.dishesGroup__dots--regular {
-    display: block;
   }
 }
 footer {
