@@ -92,6 +92,14 @@ h3 {
     width: 78%;
   }
 }
+@keyframes strokeLineDesktop {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 75%;
+  }
+}
 .mainBtn {
   width: 60%;
   max-width: 20rem;
@@ -418,7 +426,7 @@ h3 {
   transition: transform 500ms linear;
 }
 .dishesGroup:hover .dishesGroup__item, .dishesGroup:hover .dishesGroup__title, .dishesGroup:hover .dishesGroup__paragraph {
-  animation: strokeLine 300ms ease-out both;
+  animation: strokeLine 300ms 50ms alternate ease-out both;
 }
 
 @media screen and (min-width: 992px) {
@@ -427,6 +435,9 @@ h3 {
   }
   .dishesGroup p {
     font-size: 0.7rem;
+  }
+  .dishesGroup:hover .dishesGroup__item, .dishesGroup:hover .dishesGroup__title, .dishesGroup:hover .dishesGroup__paragraph {
+    animation: strokeLineDesktop 300ms 50ms alternate ease-out both;
   }
 }
 footer {

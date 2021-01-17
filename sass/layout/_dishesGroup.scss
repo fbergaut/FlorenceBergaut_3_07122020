@@ -75,7 +75,7 @@
   &:hover .dishesGroup__item,
   &:hover .dishesGroup__title,
   &:hover .dishesGroup__paragraph {
-    animation: strokeLine 300ms ease-out both;
+    animation: strokeLine 300ms 50ms alternate ease-out both;
   }
 }
 
@@ -88,6 +88,11 @@
     }
     p {
       font-size: 0.7rem;
+    }
+    &:hover .dishesGroup__item,
+    &:hover .dishesGroup__title,
+    &:hover .dishesGroup__paragraph {
+      animation: strokeLineDesktop 300ms 50ms alternate ease-out both;
     }
   }
 }
