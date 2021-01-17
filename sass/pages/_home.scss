@@ -147,7 +147,7 @@
   .section3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto-fill, 3, 1fr);
+    grid-template-rows: auto;
     column-gap: 2.5rem;
     .card1 {
       grid-column: 1;
