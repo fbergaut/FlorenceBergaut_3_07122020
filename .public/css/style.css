@@ -73,10 +73,10 @@ h3 {
   }
 }
 .animateOpacity {
-  animation: opacityLoader 800ms 3000ms ease both;
+  animation: opacityHome 800ms 3000ms ease both;
 }
 
-@keyframes opacityLoader {
+@keyframes opacityHome {
   0% {
     opacity: 0;
   }
@@ -149,16 +149,16 @@ h3 {
   transition: all 100ms ease-out;
 }
 
-#spinningLoader {
+.spinningLoader {
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   position: absolute;
+  animation: opacityLoader 2000ms 2000ms both;
 }
 
 .center {
@@ -190,6 +190,16 @@ h3 {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes opacityLoader {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
   }
 }
 .headerMain {
