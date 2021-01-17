@@ -339,7 +339,6 @@ h3 {
   z-index: 1;
 }
 .dishesGroup__title {
-  background: #09e766;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -349,7 +348,6 @@ h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  background: #139797;
 }
 .dishesGroup .price {
   font-weight: 700;
@@ -358,8 +356,8 @@ h3 {
   height: 2.75rem;
   transform: translateX(0);
   transition: transform 500ms;
-  background: #e67206;
-  padding-right: 1.5rem;
+  padding: 0 1.5rem 0 0.2rem;
+  background: white;
 }
 .dishesGroup__check {
   background: #99e2d0;
@@ -388,31 +386,23 @@ h3 {
 .dishesGroup__animation--delay3 {
   animation-delay: 800ms;
 }
-.dishesGroup:hover .dishesGroup__check {
-  transform: translateX(-3rem);
-}
-.dishesGroup:hover .price {
+.dishesGroup:hover .dishesGroup__check, .dishesGroup:hover .price {
   transform: translateX(-3rem);
 }
 .dishesGroup:hover .fa-check-circle {
   transform: rotate(360deg);
-  transition: transform 700ms ease-in-out;
+  transition: transform 500ms linear;
 }
-.dishesGroup:hover .dishesGroup__item,
-.dishesGroup .dishesGroup__title,
-.dishesGroup .dishesGroup__paragraph {
-  animation: strokeLine 2000ms both;
+.dishesGroup:hover .dishesGroup__item, .dishesGroup:hover .dishesGroup__title, .dishesGroup:hover .dishesGroup__paragraph {
+  animation: strokeLine 300ms ease-out both;
 }
 
 @keyframes strokeLine {
   0% {
     width: 100%;
   }
-  50% {
-    width: 50%;
-  }
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 992px) {

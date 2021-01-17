@@ -17,7 +17,6 @@
     z-index: 1;
   }
   &__title {
-    background: rgb(9, 231, 102);
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -27,7 +26,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    background: rgb(19, 151, 151);
   }
   .price {
     font-weight: 700;
@@ -36,8 +34,8 @@
     height: 2.75rem;
     transform: translateX(0);
     transition: transform 500ms;
-    background: rgb(230, 114, 6);
-    padding-right: 1.5rem;
+    padding: 0 1.5rem 0 0.2rem;
+    background: white;
   }
   &__check {
     background: $clr-tertiary;
@@ -66,20 +64,19 @@
       animation-delay: 800ms;
     }
   }
-  &:hover &__check {
-    @include animationCheckPrice;
-  }
+  &:hover &__check,
   &:hover .price {
     @include animationCheckPrice;
   }
+
   &:hover .fa-check-circle {
     transform: rotate(360deg);
-    transition: transform 700ms ease-in-out;
+    transition: transform 500ms linear;
   }
   &:hover .dishesGroup__item,
-  .dishesGroup__title,
-  .dishesGroup__paragraph {
-    animation: strokeLine 2000ms both;
+  &:hover .dishesGroup__title,
+  &:hover .dishesGroup__paragraph {
+    animation: strokeLine 300ms ease-out both;
   }
 }
 
@@ -87,11 +84,8 @@
   0% {
     width: 100%;
   }
-  50% {
-    width: 50%;
-  }
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 //*************************media-queries
