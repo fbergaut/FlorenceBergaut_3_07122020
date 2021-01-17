@@ -354,7 +354,7 @@ h3 {
   overflow: hidden;
 }
 .dishesGroup__paragraph {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -451,7 +451,7 @@ footer ul li a:hover {
 
 .restoPage2 {
   position: absolute;
-  top: 106rem;
+  top: 102rem;
   width: 100%;
 }
 
