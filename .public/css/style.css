@@ -84,6 +84,14 @@ h3 {
     opacity: 1;
   }
 }
+@keyframes strokeLine {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 78%;
+  }
+}
 .mainBtn {
   width: 60%;
   max-width: 20rem;
@@ -328,6 +336,8 @@ h3 {
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
+  height: 4.5rem;
   box-shadow: 0px 5px 7px #ebebeb;
 }
 .dishesGroup__item {
@@ -356,8 +366,10 @@ h3 {
   height: 2.75rem;
   transform: translateX(0);
   transition: transform 500ms;
-  padding: 0 1.5rem 0 0.2rem;
+  padding-right: 1.5rem;
   background: white;
+  position: absolute;
+  right: 0;
 }
 .dishesGroup__check {
   background: #99e2d0;
@@ -368,7 +380,9 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -3.7rem;
+  transform-origin: center;
+  position: absolute;
+  right: -4.1rem;
 }
 .dishesGroup__check .fas {
   color: white;
@@ -387,7 +401,7 @@ h3 {
   animation-delay: 800ms;
 }
 .dishesGroup:hover .dishesGroup__check, .dishesGroup:hover .price {
-  transform: translateX(-3rem);
+  transform: translateX(-4rem);
 }
 .dishesGroup:hover .fa-check-circle {
   transform: rotate(360deg);
@@ -397,14 +411,6 @@ h3 {
   animation: strokeLine 300ms ease-out both;
 }
 
-@keyframes strokeLine {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 80%;
-  }
-}
 @media screen and (min-width: 992px) {
   .dishesGroup h3 {
     font-size: 0.9rem;
@@ -439,7 +445,7 @@ footer ul li a:hover {
 
 .restoPage {
   position: absolute;
-  top: 100rem;
+  top: 96.5rem;
   width: 100%;
 }
 

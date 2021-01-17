@@ -7,25 +7,21 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
+  height: 4.5rem;
   @include dishesGroup-shadow;
   &__item {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    @include ellipsis;
     width: 100%;
     padding-left: 1rem;
     z-index: 1;
   }
   &__title {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    @include ellipsis;
   }
   &__paragraph {
     font-size: 0.9rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    @include ellipsis;
   }
   .price {
     font-weight: 700;
@@ -34,8 +30,10 @@
     height: 2.75rem;
     transform: translateX(0);
     transition: transform 500ms;
-    padding: 0 1.5rem 0 0.2rem;
+    padding-right: 1.5rem;
     background: white;
+    position: absolute;
+    right: 0;
   }
   &__check {
     background: $clr-tertiary;
@@ -46,7 +44,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -3.7rem;
+    transform-origin: center;
+    position: absolute;
+    right: -4.1rem;
     .fas {
       color: white;
       font-size: 1.5rem;
@@ -68,7 +68,6 @@
   &:hover .price {
     @include animationCheckPrice;
   }
-
   &:hover .fa-check-circle {
     transform: rotate(360deg);
     transition: transform 500ms linear;
@@ -80,14 +79,6 @@
   }
 }
 
-@keyframes strokeLine {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 80%;
-  }
-}
 //*************************media-queries
 
 @media screen and (min-width: map-get($breakpoints, mobile)) {

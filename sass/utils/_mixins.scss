@@ -57,8 +57,16 @@
   box-shadow: 0px 5px 7px lighten($colour, 15%);
 }
 
+//*************************DishesGroup ellipsis
+
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 //*************************DishesGroup-animationCheckPrice
 
 @mixin animationCheckPrice {
-  transform: translateX(-3rem);
+  transform: translateX(-4rem);
 }
