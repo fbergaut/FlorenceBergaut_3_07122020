@@ -57,28 +57,16 @@
   box-shadow: 0px 5px 7px lighten($colour, 15%);
 }
 
-//*************************DishesGroup__dots
+//*************************DishesGroup ellipsis
 
-@mixin dots {
-  position: absolute;
-  background: white;
-  right: 0;
-  width: 2.5rem;
-  transition: transform 500ms ease-out;
-  &::before {
-    content: "...";
-    transform: translateX(0);
-  }
-}
-
-//*************************DishesGroup-animationDots
-
-@mixin animationDots {
-  transform: translateX(-7.2rem);
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 //*************************DishesGroup-animationCheckPrice
 
 @mixin animationCheckPrice {
-  transform: translateX(-4.1rem);
+  transform: translateX(-4rem);
 }

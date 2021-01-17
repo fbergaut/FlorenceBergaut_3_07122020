@@ -3,64 +3,52 @@
   width: 100%;
   margin-top: 1rem;
   border-radius: 1.25rem;
-  position: relative;
   overflow: hidden;
-  width: 100%;
-  height: 5rem;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
+  position: relative;
+  height: 4.5rem;
   @include dishesGroup-shadow;
   &__item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
+    @include ellipsis;
+    width: 100%;
     padding-left: 1rem;
-    h3 {
-      font-size: 1.05rem;
-      position: relative;
-      flex: 1 100%;
-      padding-bottom: 0.1rem;
-    }
-    p {
-      font-size: 0.9rem;
-    }
-    .price {
-      font-weight: 700;
-      transform: translateX(0);
-      transition: transform 500ms;
-      background: white;
-      position: absolute;
-      padding: 1.5rem 2rem 0 0;
-      right: 0;
-    }
+    z-index: 1;
   }
-  &__dots {
-    top: 1rem;
-    @include dots;
-    &--regular {
-      @include dots;
-    }
+  &__title {
+    @include ellipsis;
   }
-  .hidden {
-    display: none;
+  &__paragraph {
+    font-size: 0.85rem;
+    @include ellipsis;
+  }
+  .price {
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    height: 2.75rem;
+    transform: translateX(0);
+    transition: transform 500ms;
+    padding-right: 1.5rem;
+    background: white;
+    position: absolute;
+    right: 0;
   }
   &__check {
     background: $clr-tertiary;
-    position: absolute;
-    top: 0;
-    right: -4.1rem;
     transform: translateX(0);
     transition: transform 500ms;
     width: 4.1rem;
-    height: 5.16rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform-origin: center;
+    position: absolute;
+    right: -4.1rem;
     .fas {
       color: white;
-      //padding: 1.75rem 1.3rem;
       font-size: 1.5rem;
     }
   }
@@ -76,33 +64,22 @@
       animation-delay: 800ms;
     }
   }
-  &:hover .dishesGroup__check {
-    @include animationCheckPrice;
-  }
+  &:hover &__check,
   &:hover .price {
     @include animationCheckPrice;
   }
   &:hover .fa-check-circle {
     transform: rotate(360deg);
-    transition: transform 700ms ease-in-out;
+    transition: transform 500ms linear;
   }
-  &:hover .dishesGroup__dots {
-    @include animationDots;
-  }
-
-  &:hover .dishesGroup__dots--regular {
-    @include animationDots;
+  &:hover .dishesGroup__item,
+  &:hover .dishesGroup__title,
+  &:hover .dishesGroup__paragraph {
+    animation: strokeLine 300ms 50ms alternate ease-out both;
   }
 }
 
 //*************************media-queries
-
-@media screen and (min-width: map-get($breakpoints, mobile)) {
-  .dishesGroup__dots,
-  .dishesGroup__dots--regular {
-    display: none;
-  }
-}
 
 @media screen and (min-width: map-get($breakpoints, desktop)) {
   .dishesGroup {
@@ -112,15 +89,10 @@
     p {
       font-size: 0.7rem;
     }
-    &__dots {
-      top: 1.4rem;
-      &--regular {
-        top: 2.6rem;
-      }
+    &:hover .dishesGroup__item,
+    &:hover .dishesGroup__title,
+    &:hover .dishesGroup__paragraph {
+      animation: strokeLineDesktop 300ms 50ms alternate ease-out both;
     }
-  }
-  .dishesGroup__dots,
-  .dishesGroup__dots--regular {
-    display: block;
   }
 }

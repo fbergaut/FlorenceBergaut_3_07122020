@@ -29,9 +29,9 @@
     <script src="https://kit.fontawesome.com/e0b5da58c3.js" crossorigin="anonymous"></script>
   </head>
 
-  <body onload="myFunction()">
+  <body>
     <!--SpinningLoader-->
-    <div id="spinningLoader">
+    <div class="spinningLoader">
       <div class="outer-ring center"></div>
       <div class="inner-ring center"></div>
     </div>
@@ -198,17 +198,5 @@
     </footer>
     </div>
 
-    <script>
-      var myVar;
-
-      function myFunction() {
-        myVar = setTimeout(showPage, 3000);
-      }
-
-      function showPage() {
-        document.getElementById("spinningLoader").style.display = "none";
-        document.getElementById("wrapper").style.display = "block";
-      }
-    </script>
   </body>
 </html>
