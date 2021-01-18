@@ -279,7 +279,7 @@ h3 {
 }
 .restoContainer__title .position {
   top: 2.3rem;
-  right: 5rem;
+  right: 4.9rem;
 }
 .restoContainer__title .far {
   font-size: 1.7rem;
@@ -301,9 +301,6 @@ h3 {
   .restoContainer .restoContainer__title {
     grid-row: 1;
     grid-column: 1/-1;
-  }
-  .restoContainer .restoContainer__title .position {
-    right: 7rem;
   }
   .restoContainer .bloc1 {
     grid-column: 1;
